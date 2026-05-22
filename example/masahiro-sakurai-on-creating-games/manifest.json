@@ -1,0 +1,4719 @@
+{
+  "book_title": "Masahiro Sakurai on Creating Games",
+  "book_slug": "masahiro-sakurai-on-creating-games",
+  "description": "A curated handbook distilling Masahiro Sakurai's game design philosophy, development insights, and practical techniques from his YouTube channel. Covers game essence, design principles, UI/UX, visuals, animation, audio, player experience, team management, work ethic, marketing, programming, and specific design tips. Designed for game developers, designers, and enthusiasts seeking actionable wisdom.",
+  "audience": "Game developers, designers, producers, artists, programmers, and enthusiasts of all skill levels.",
+  "routing_rules": [
+    "If query is about core game mechanics, risk-reward, difficulty, or player motivation, route to 'Game Essence' or 'Game Design Principles'.",
+    "If query is about UI, controls, menus, or accessibility, route to 'UI/UX Design'.",
+    "If query is about graphics, effects, or visual polish, route to 'Visual & Graphics'.",
+    "If query is about animation, character motion, or hit feedback, route to 'Animation & Motion'.",
+    "If query is about sound effects, music, or audio design, route to 'Audio Design'.",
+    "If query is about player experience, tutorials, or time management, route to 'Player Experience'.",
+    "If query is about development workflow, project management, or technical tools, route to 'Development Insights'.",
+    "If query is about team leadership, communication, or team culture, route to 'Team Management & Workflow'.",
+    "If query is about personal productivity, creative process, or professional attitude, route to 'Work Ethic & Mindset'.",
+    "If query is about marketing, trailers, or community engagement, route to 'Marketing & Communication'.",
+    "If query is about programming practices, parameter tuning, or debugging, route to 'Programming & Tech'.",
+    "If query is about specific design techniques like hit stop, screen shake, or explosion effects, route to 'Design Specifics'."
+  ],
+  "categories": [
+    {
+      "title": "Game Essence",
+      "slug": "game-essence",
+      "path": "categories/game-essence/CATEGORY.md",
+      "description": "Fundamental principles of what makes games fun: risk-reward, pressure-release, and core motivation.",
+      "when_to_read": [
+        "When designing core gameplay loops and player motivation."
+      ],
+      "core_terms": [
+        "risk and reward",
+        "pressure-release cycle",
+        "game essence"
+      ],
+      "entries": [
+        {
+          "slug": "risk-and-reward",
+          "path": "categories/game-essence/risk-and-reward.md"
+        },
+        {
+          "slug": "squeeze-and-release",
+          "path": "categories/game-essence/squeeze-and-release.md"
+        },
+        {
+          "slug": "game-essence-in-rpgs",
+          "path": "categories/game-essence/game-essence-in-rpgs.md"
+        },
+        {
+          "slug": "game-essence-in-falling-block-puzzle-games",
+          "path": "categories/game-essence/game-essence-in-falling-block-puzzle-games.md"
+        },
+        {
+          "slug": "game-essence-in-shooting-games",
+          "path": "categories/game-essence/game-essence-in-shooting-games.md"
+        },
+        {
+          "slug": "do-we-need-enemies",
+          "path": "categories/game-essence/do-we-need-enemies.md"
+        },
+        {
+          "slug": "falling-sells-flight",
+          "path": "categories/game-essence/falling-sells-flight.md"
+        }
+      ]
+    },
+    {
+      "title": "Game Design Principles",
+      "slug": "game-design-principles",
+      "path": "categories/game-design-principles/CATEGORY.md",
+      "description": "Core design rules for crafting engaging, balanced, and intuitive game experiences.",
+      "when_to_read": [
+        "When designing mechanics, difficulty, or tutorials."
+      ],
+      "core_terms": [
+        "difficulty escalation",
+        "player guidance",
+        "mandatory strategy",
+        "rock-paper-scissors"
+      ],
+      "entries": [
+        {
+          "slug": "difficulty-and-player-retention",
+          "path": "categories/game-design-principles/difficulty-and-player-retention.md"
+        },
+        {
+          "slug": "player-guidance-and-freedom",
+          "path": "categories/game-design-principles/player-guidance-and-freedom.md"
+        },
+        {
+          "slug": "mandatory-strategies-and-strategic-balance",
+          "path": "categories/game-design-principles/mandatory-strategies-and-strategic-balance.md"
+        },
+        {
+          "slug": "game-essence-in-strategy-games",
+          "path": "categories/game-design-principles/game-essence-in-strategy-games.md"
+        },
+        {
+          "slug": "average-and-mediocre-are-the-same-thing",
+          "path": "categories/game-design-principles/average-and-mediocre-are-the-same-thing.md"
+        },
+        {
+          "slug": "more-game-essence-means-less-broad-appeal",
+          "path": "categories/game-design-principles/more-game-essence-means-less-broad-appeal.md"
+        },
+        {
+          "slug": "difficulty-balance",
+          "path": "categories/game-design-principles/difficulty-balance.md"
+        },
+        {
+          "slug": "tutorial-design",
+          "path": "categories/game-design-principles/tutorial-design.md"
+        },
+        {
+          "slug": "teaching-players-how-to-play",
+          "path": "categories/game-design-principles/teaching-players-how-to-play.md"
+        },
+        {
+          "slug": "making-tutorials-feel-natural",
+          "path": "categories/game-design-principles/making-tutorials-feel-natural.md"
+        },
+        {
+          "slug": "reward-system-design",
+          "path": "categories/game-design-principles/reward-system-design.md"
+        },
+        {
+          "slug": "reward-consumption-pairing",
+          "path": "categories/game-design-principles/reward-consumption-pairing.md"
+        },
+        {
+          "slug": "consider-rewards-first",
+          "path": "categories/game-design-principles/consider-rewards-first.md"
+        },
+        {
+          "slug": "keeping-rewards-in-sight",
+          "path": "categories/game-design-principles/keeping-rewards-in-sight.md"
+        },
+        {
+          "slug": "good-bad-errands",
+          "path": "categories/game-design-principles/good-bad-errands.md"
+        },
+        {
+          "slug": "fetch-quest",
+          "path": "categories/game-design-principles/fetch-quest.md"
+        }
+      ]
+    },
+    {
+      "title": "UI/UX Design",
+      "slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/CATEGORY.md",
+      "description": "Designing interfaces that are clear, accessible, and emotionally engaging.",
+      "when_to_read": [
+        "When designing menus, HUD, or controls."
+      ],
+      "core_terms": [
+        "skipability",
+        "button configuration",
+        "HUD",
+        "color coding"
+      ],
+      "entries": [
+        {
+          "slug": "readability-vs-style",
+          "path": "categories/ui-ux-design/readability-vs-style.md"
+        },
+        {
+          "slug": "hud-design",
+          "path": "categories/ui-ux-design/hud-design.md"
+        },
+        {
+          "slug": "accessibility-options",
+          "path": "categories/ui-ux-design/accessibility-options.md"
+        },
+        {
+          "slug": "loading-screen-design",
+          "path": "categories/ui-ux-design/loading-screen-design.md"
+        },
+        {
+          "slug": "text-rendering",
+          "path": "categories/ui-ux-design/text-rendering.md"
+        },
+        {
+          "slug": "menu-color-coding",
+          "path": "categories/ui-ux-design/menu-color-coding.md"
+        },
+        {
+          "slug": "icon-sizing",
+          "path": "categories/ui-ux-design/icon-sizing.md"
+        },
+        {
+          "slug": "make-important-elements-bigger",
+          "path": "categories/ui-ux-design/make-important-elements-bigger.md"
+        },
+        {
+          "slug": "color-coding-ui",
+          "path": "categories/ui-ux-design/color-coding-ui.md"
+        },
+        {
+          "slug": "adding-help-text-to-menus",
+          "path": "categories/ui-ux-design/adding-help-text-to-menus.md"
+        },
+        {
+          "slug": "making-things-clear-even-without-words",
+          "path": "categories/ui-ux-design/making-things-clear-even-without-words.md"
+        },
+        {
+          "slug": "maps-game-screens",
+          "path": "categories/ui-ux-design/maps-game-screens.md"
+        },
+        {
+          "slug": "menus-define-world",
+          "path": "categories/ui-ux-design/menus-define-world.md"
+        },
+        {
+          "slug": "let-them-skip-let-them-pause",
+          "path": "categories/ui-ux-design/let-them-skip-let-them-pause.md"
+        },
+        {
+          "slug": "button-settings",
+          "path": "categories/ui-ux-design/button-settings.md"
+        },
+        {
+          "slug": "button-responsiveness",
+          "path": "categories/ui-ux-design/button-responsiveness.md"
+        },
+        {
+          "slug": "fast-menu-selection",
+          "path": "categories/ui-ux-design/fast-menu-selection.md"
+        }
+      ]
+    },
+    {
+      "title": "Visual & Graphics",
+      "slug": "visual-graphics",
+      "path": "categories/visual-graphics/CATEGORY.md",
+      "description": "Techniques for creating visually appealing, readable, and cohesive game graphics.",
+      "when_to_read": [
+        "When working on art direction, effects, or visual polish."
+      ],
+      "core_terms": [
+        "character silhouette",
+        "post-processing",
+        "billboard",
+        "scale",
+        "color disparity"
+      ],
+      "entries": [
+        {
+          "slug": "character-silhouette-and-readability",
+          "path": "categories/visual-graphics/character-silhouette-and-readability.md"
+        },
+        {
+          "slug": "graphical-polish-and-consistency",
+          "path": "categories/visual-graphics/graphical-polish-and-consistency.md"
+        },
+        {
+          "slug": "effective-use-of-post-processing",
+          "path": "categories/visual-graphics/effective-use-of-post-processing.md"
+        },
+        {
+          "slug": "dealing-with-color-disparity",
+          "path": "categories/visual-graphics/dealing-with-color-disparity.md"
+        },
+        {
+          "slug": "making-things-look-miniature",
+          "path": "categories/visual-graphics/making-things-look-miniature.md"
+        },
+        {
+          "slug": "sense-of-scale-right",
+          "path": "categories/visual-graphics/sense-of-scale-right.md"
+        },
+        {
+          "slug": "low-resolution-pixel-art",
+          "path": "categories/visual-graphics/low-resolution-pixel-art.md"
+        },
+        {
+          "slug": "basics-pixel-art",
+          "path": "categories/visual-graphics/basics-pixel-art.md"
+        },
+        {
+          "slug": "final-output-post-processing",
+          "path": "categories/visual-graphics/final-output-post-processing.md"
+        },
+        {
+          "slug": "color-accessibility",
+          "path": "categories/visual-graphics/color-accessibility.md"
+        },
+        {
+          "slug": "team-art-style-unification",
+          "path": "categories/visual-graphics/team-art-style-unification.md"
+        },
+        {
+          "slug": "a-fight-between-live-action-and-animation",
+          "path": "categories/visual-graphics/a-fight-between-live-action-and-animation.md"
+        },
+        {
+          "slug": "graphics-and-fun",
+          "path": "categories/visual-graphics/graphics-and-fun.md"
+        },
+        {
+          "slug": "f-graphics-1-category-compilation-01-06",
+          "path": "categories/visual-graphics/f-graphics-1-category-compilation-01-06.md"
+        },
+        {
+          "slug": "manga-like-visuals",
+          "path": "categories/visual-graphics/manga-like-visuals.md"
+        },
+        {
+          "slug": "let-your-characters-shine",
+          "path": "categories/visual-graphics/let-your-characters-shine.md"
+        },
+        {
+          "slug": "distinguishing-between-major-and-minor-elements",
+          "path": "categories/visual-graphics/distinguishing-between-major-and-minor-elements.md"
+        },
+        {
+          "slug": "emphasize-objects-with-collision",
+          "path": "categories/visual-graphics/emphasize-objects-with-collision.md"
+        },
+        {
+          "slug": "draw-the-light-not-the-asset",
+          "path": "categories/visual-graphics/draw-the-light-not-the-asset.md"
+        },
+        {
+          "slug": "make-it-pop",
+          "path": "categories/visual-graphics/make-it-pop.md"
+        },
+        {
+          "slug": "flash-blast-smoke",
+          "path": "categories/visual-graphics/flash-blast-smoke.md"
+        }
+      ]
+    },
+    {
+      "title": "Animation & Motion",
+      "slug": "animation-motion",
+      "path": "categories/animation-motion/CATEGORY.md",
+      "description": "Principles for creating expressive, impactful, and readable character animations.",
+      "when_to_read": [
+        "When animating characters, attacks, or movements."
+      ],
+      "core_terms": [
+        "hit stop",
+        "cancel frame",
+        "squash and stretch",
+        "action stages",
+        "silhouette"
+      ],
+      "entries": [
+        {
+          "slug": "hit-stop-mechanics",
+          "path": "categories/animation-motion/hit-stop-mechanics.md"
+        },
+        {
+          "slug": "eight-hit-stop-techniques",
+          "path": "categories/animation-motion/eight-hit-stop-techniques.md"
+        },
+        {
+          "slug": "stop-for-big-moments",
+          "path": "categories/animation-motion/stop-for-big-moments.md"
+        },
+        {
+          "slug": "breaking-down-attack-animations",
+          "path": "categories/animation-motion/breaking-down-attack-animations.md"
+        },
+        {
+          "slug": "always-keep-attack-collision-in-mind",
+          "path": "categories/animation-motion/always-keep-attack-collision-in-mind.md"
+        },
+        {
+          "slug": "attack-poses",
+          "path": "categories/animation-motion/attack-poses.md"
+        },
+        {
+          "slug": "center-of-gravity-shift",
+          "path": "categories/animation-motion/center-of-gravity-shift.md"
+        },
+        {
+          "slug": "sprite-cycling",
+          "path": "categories/animation-motion/sprite-cycling.md"
+        },
+        {
+          "slug": "damage-animation-transition",
+          "path": "categories/animation-motion/damage-animation-transition.md"
+        },
+        {
+          "slug": "extreme-keyframes",
+          "path": "categories/animation-motion/extreme-keyframes.md"
+        },
+        {
+          "slug": "facial-expressions-exaggeration",
+          "path": "categories/animation-motion/facial-expressions-exaggeration.md"
+        },
+        {
+          "slug": "ik-and-fk-usage",
+          "path": "categories/animation-motion/ik-and-fk-usage.md"
+        },
+        {
+          "slug": "rotation-on-two-axes",
+          "path": "categories/animation-motion/rotation-on-two-axes.md"
+        },
+        {
+          "slug": "g-animation-1",
+          "path": "categories/animation-motion/g-animation-1.md"
+        },
+        {
+          "slug": "establishing-characters-through-their-design",
+          "path": "categories/animation-motion/establishing-characters-through-their-design.md"
+        },
+        {
+          "slug": "flipped-animation",
+          "path": "categories/animation-motion/flipped-animation.md"
+        },
+        {
+          "slug": "animation-blending",
+          "path": "categories/animation-motion/animation-blending.md"
+        },
+        {
+          "slug": "motion-blur",
+          "path": "categories/animation-motion/motion-blur.md"
+        },
+        {
+          "slug": "squash-and-scale",
+          "path": "categories/animation-motion/squash-and-scale.md"
+        },
+        {
+          "slug": "too-much-is-just-right",
+          "path": "categories/animation-motion/too-much-is-just-right.md"
+        },
+        {
+          "slug": "assigning-animations",
+          "path": "categories/animation-motion/assigning-animations.md"
+        },
+        {
+          "slug": "animation-interpolation",
+          "path": "categories/animation-motion/animation-interpolation.md"
+        }
+      ]
+    },
+    {
+      "title": "Audio Design",
+      "slug": "audio-design",
+      "path": "categories/audio-design/CATEGORY.md",
+      "description": "Sound design and music principles that enhance gameplay feel and clarity.",
+      "when_to_read": [
+        "When designing sound effects or music for a game."
+      ],
+      "core_terms": [
+        "BPM",
+        "sound effect priority",
+        "attack strong",
+        "light reverb"
+      ],
+      "entries": [
+        {
+          "slug": "audio-importance",
+          "path": "categories/audio-design/audio-importance.md"
+        },
+        {
+          "slug": "bpm-selection",
+          "path": "categories/audio-design/bpm-selection.md"
+        },
+        {
+          "slug": "sfx-priority",
+          "path": "categories/audio-design/sfx-priority.md"
+        },
+        {
+          "slug": "multi-device-testing",
+          "path": "categories/audio-design/multi-device-testing.md"
+        },
+        {
+          "slug": "modern-game-music",
+          "path": "categories/audio-design/modern-game-music.md"
+        },
+        {
+          "slug": "realism-vs-exaggeration",
+          "path": "categories/audio-design/realism-vs-exaggeration.md"
+        },
+        {
+          "slug": "voice-recording",
+          "path": "categories/audio-design/voice-recording.md"
+        },
+        {
+          "slug": "music-production-flow",
+          "path": "categories/audio-design/music-production-flow.md"
+        },
+        {
+          "slug": "sound-effect-design",
+          "path": "categories/audio-design/sound-effect-design.md"
+        },
+        {
+          "slug": "reference-music-cautions",
+          "path": "categories/audio-design/reference-music-cautions.md"
+        },
+        {
+          "slug": "audio-as-fiction-and-non-fiction",
+          "path": "categories/audio-design/audio-as-fiction-and-non-fiction.md"
+        },
+        {
+          "slug": "the-original-piece-is-always-right",
+          "path": "categories/audio-design/the-original-piece-is-always-right.md"
+        },
+        {
+          "slug": "strike-a-balance-with-sound-effects",
+          "path": "categories/audio-design/strike-a-balance-with-sound-effects.md"
+        },
+        {
+          "slug": "make-the-tempo-match-the-game",
+          "path": "categories/audio-design/make-the-tempo-match-the-game.md"
+        },
+        {
+          "slug": "listen-various-environments",
+          "path": "categories/audio-design/listen-various-environments.md"
+        },
+        {
+          "slug": "famicom-and-nes-audio",
+          "path": "categories/audio-design/famicom-and-nes-audio.md"
+        },
+        {
+          "slug": "using-other-songs-for-audio-reference",
+          "path": "categories/audio-design/using-other-songs-for-audio-reference.md"
+        }
+      ]
+    },
+    {
+      "title": "Player Experience",
+      "slug": "player-experience",
+      "path": "categories/player-experience/CATEGORY.md",
+      "description": "Insights on capturing and maintaining player interest through pacing, retries, and emotional engagement.",
+      "when_to_read": [
+        "When designing game flow, difficulty, or player motivation."
+      ],
+      "core_terms": [
+        "retry",
+        "quick restart",
+        "branching tastes",
+        "player engagement"
+      ],
+      "entries": [
+        {
+          "slug": "be-mindful-of-the-time-players-are-giving-you",
+          "path": "categories/player-experience/be-mindful-of-the-time-players-are-giving-you.md"
+        },
+        {
+          "slug": "say-no-to-slow",
+          "path": "categories/player-experience/say-no-to-slow.md"
+        },
+        {
+          "slug": "make-retries-quick",
+          "path": "categories/player-experience/make-retries-quick.md"
+        },
+        {
+          "slug": "death-relief",
+          "path": "categories/player-experience/death-relief.md"
+        },
+        {
+          "slug": "praise-player",
+          "path": "categories/player-experience/praise-player.md"
+        },
+        {
+          "slug": "praise-players",
+          "path": "categories/player-experience/praise-players.md"
+        },
+        {
+          "slug": "world-without-footprints",
+          "path": "categories/player-experience/world-without-footprints.md"
+        },
+        {
+          "slug": "enjoying-games-without-spoilers",
+          "path": "categories/player-experience/enjoying-games-without-spoilers.md"
+        },
+        {
+          "slug": "respecting-player-time",
+          "path": "categories/player-experience/respecting-player-time.md"
+        },
+        {
+          "slug": "embracing-games-of-all-eras",
+          "path": "categories/player-experience/embracing-games-of-all-eras.md"
+        },
+        {
+          "slug": "fun-picking-sides",
+          "path": "categories/player-experience/fun-picking-sides.md"
+        },
+        {
+          "slug": "branching-tastes",
+          "path": "categories/player-experience/branching-tastes.md"
+        },
+        {
+          "slug": "that-was-then-this-is-now",
+          "path": "categories/player-experience/that-was-then-this-is-now.md"
+        },
+        {
+          "slug": "game-opening",
+          "path": "categories/player-experience/game-opening.md"
+        },
+        {
+          "slug": "just-let-them-play",
+          "path": "categories/player-experience/just-let-them-play.md"
+        },
+        {
+          "slug": "high-difficulty-appeal",
+          "path": "categories/player-experience/high-difficulty-appeal.md"
+        },
+        {
+          "slug": "difficulty-motivation",
+          "path": "categories/player-experience/difficulty-motivation.md"
+        },
+        {
+          "slug": "being-kind-to-beginners",
+          "path": "categories/player-experience/being-kind-to-beginners.md"
+        }
+      ]
+    },
+    {
+      "title": "Development Insights",
+      "slug": "development-insights",
+      "path": "categories/development-insights/CATEGORY.md",
+      "description": "Behind-the-scenes stories and practical advice on game development, project management, and tools.",
+      "when_to_read": [
+        "When facing development challenges or setting up workflows."
+      ],
+      "core_terms": [
+        "parameter externalization",
+        "ticket system",
+        "debug mode"
+      ],
+      "entries": [
+        {
+          "slug": "handling-development-setbacks",
+          "path": "categories/development-insights/handling-development-setbacks.md"
+        },
+        {
+          "slug": "role-of-the-director",
+          "path": "categories/development-insights/role-of-the-director.md"
+        },
+        {
+          "slug": "team-building-and-communication",
+          "path": "categories/development-insights/team-building-and-communication.md"
+        },
+        {
+          "slug": "making-your-game-easy-to-tune",
+          "path": "categories/development-insights/making-your-game-easy-to-tune.md"
+        },
+        {
+          "slug": "bug-testing-systems",
+          "path": "categories/development-insights/bug-testing-systems.md"
+        },
+        {
+          "slug": "debug-mode",
+          "path": "categories/development-insights/debug-mode.md"
+        },
+        {
+          "slug": "storage-cable-management",
+          "path": "categories/development-insights/storage-cable-management.md"
+        },
+        {
+          "slug": "transparency-features",
+          "path": "categories/development-insights/transparency-features.md"
+        },
+        {
+          "slug": "naming-conventions",
+          "path": "categories/development-insights/naming-conventions.md"
+        },
+        {
+          "slug": "parameter-externalization",
+          "path": "categories/development-insights/parameter-externalization.md"
+        },
+        {
+          "slug": "ticket-system",
+          "path": "categories/development-insights/ticket-system.md"
+        },
+        {
+          "slug": "frame-rates",
+          "path": "categories/development-insights/frame-rates.md"
+        },
+        {
+          "slug": "units-of-speed",
+          "path": "categories/development-insights/units-of-speed.md"
+        },
+        {
+          "slug": "learn-count-frames",
+          "path": "categories/development-insights/learn-count-frames.md"
+        },
+        {
+          "slug": "put-parameters-in-brackets",
+          "path": "categories/development-insights/put-parameters-in-brackets.md"
+        },
+        {
+          "slug": "name-files-logically",
+          "path": "categories/development-insights/name-files-logically.md"
+        },
+        {
+          "slug": "staying-organized-with-hierarchical-outlines",
+          "path": "categories/development-insights/staying-organized-with-hierarchical-outlines.md"
+        },
+        {
+          "slug": "working-under-constraints",
+          "path": "categories/development-insights/working-under-constraints.md"
+        },
+        {
+          "slug": "kirby-development-secrets",
+          "path": "categories/development-insights/kirby-development-secrets.md"
+        },
+        {
+          "slug": "mushi-king-dev",
+          "path": "categories/development-insights/mushi-king-dev.md"
+        }
+      ]
+    },
+    {
+      "title": "Team Management & Workflow",
+      "slug": "team-workflow",
+      "path": "categories/team-workflow/CATEGORY.md",
+      "description": "Efficient team collaboration, communication, and decision-making methods.",
+      "when_to_read": [
+        "When leading a team or improving team processes."
+      ],
+      "core_terms": [
+        "daily report",
+        "all-hands review",
+        "majority rule pitfall"
+      ],
+      "entries": [
+        {
+          "slug": "up-is-down",
+          "path": "categories/team-workflow/up-is-down.md"
+        },
+        {
+          "slug": "director-as-trimmer",
+          "path": "categories/team-workflow/director-as-trimmer.md"
+        },
+        {
+          "slug": "early-trouble-reporting",
+          "path": "categories/team-workflow/early-trouble-reporting.md"
+        },
+        {
+          "slug": "mr-iwata-lessons",
+          "path": "categories/team-workflow/mr-iwata-lessons.md"
+        },
+        {
+          "slug": "supervision-workflow",
+          "path": "categories/team-workflow/supervision-workflow.md"
+        },
+        {
+          "slug": "decision-making-principles",
+          "path": "categories/team-workflow/decision-making-principles.md"
+        },
+        {
+          "slug": "debug-ticket-system",
+          "path": "categories/team-workflow/debug-ticket-system.md"
+        },
+        {
+          "slug": "role-of-director-vs-producer",
+          "path": "categories/team-workflow/role-of-director-vs-producer.md"
+        },
+        {
+          "slug": "finish-everything-within-the-day",
+          "path": "categories/team-workflow/finish-everything-within-the-day.md"
+        },
+        {
+          "slug": "how-multiple-people-work-on-one-file",
+          "path": "categories/team-workflow/how-multiple-people-work-on-one-file.md"
+        },
+        {
+          "slug": "sharing-info-within-a-team",
+          "path": "categories/team-workflow/sharing-info-within-a-team.md"
+        },
+        {
+          "slug": "explain-ideas-everyone",
+          "path": "categories/team-workflow/explain-ideas-everyone.md"
+        },
+        {
+          "slug": "dont-rely-plan-b",
+          "path": "categories/team-workflow/dont-rely-plan-b.md"
+        },
+        {
+          "slug": "canceled-games",
+          "path": "categories/team-workflow/canceled-games.md"
+        },
+        {
+          "slug": "spec-changes",
+          "path": "categories/team-workflow/spec-changes.md"
+        },
+        {
+          "slug": "decide-on-the-spot",
+          "path": "categories/team-workflow/decide-on-the-spot.md"
+        },
+        {
+          "slug": "stay-true-to-concept",
+          "path": "categories/team-workflow/stay-true-to-concept.md"
+        },
+        {
+          "slug": "specification-changes",
+          "path": "categories/team-workflow/specification-changes.md"
+        },
+        {
+          "slug": "ten-people-can-produce-seven-peoples-work",
+          "path": "categories/team-workflow/ten-people-can-produce-seven-peoples-work.md"
+        },
+        {
+          "slug": "mastering-up",
+          "path": "categories/team-workflow/mastering-up.md"
+        },
+        {
+          "slug": "sora-ltd",
+          "path": "categories/team-workflow/sora-ltd.md"
+        },
+        {
+          "slug": "company-game-development",
+          "path": "categories/team-workflow/company-game-development.md"
+        },
+        {
+          "slug": "majority-should-not-rule",
+          "path": "categories/team-workflow/majority-should-not-rule.md"
+        },
+        {
+          "slug": "directors-and-producers",
+          "path": "categories/team-workflow/directors-and-producers.md"
+        },
+        {
+          "slug": "dont-wait-to-speak",
+          "path": "categories/team-workflow/dont-wait-to-speak.md"
+        },
+        {
+          "slug": "jobs-in-game-development",
+          "path": "categories/team-workflow/jobs-in-game-development.md"
+        },
+        {
+          "slug": "sora-work-from-home",
+          "path": "categories/team-workflow/sora-work-from-home.md"
+        }
+      ]
+    },
+    {
+      "title": "Work Ethic & Mindset",
+      "slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/CATEGORY.md",
+      "description": "Personal productivity, creative habits, and professional attitudes for game developers.",
+      "when_to_read": [
+        "When needing motivation or improving workflow."
+      ],
+      "core_terms": [
+        "professionalism",
+        "just do it",
+        "input-output habits",
+        "internal pressure"
+      ],
+      "entries": [
+        {
+          "slug": "make-games-because-youre-good-at-it",
+          "path": "categories/work-ethic-mindset/make-games-because-youre-good-at-it.md"
+        },
+        {
+          "slug": "just-do-it-already",
+          "path": "categories/work-ethic-mindset/just-do-it-already.md"
+        },
+        {
+          "slug": "broad-input-output",
+          "path": "categories/work-ethic-mindset/broad-input-output.md"
+        },
+        {
+          "slug": "keep-your-internal-pressure-high",
+          "path": "categories/work-ethic-mindset/keep-your-internal-pressure-high.md"
+        },
+        {
+          "slug": "the-power-of-suggestion",
+          "path": "categories/work-ethic-mindset/the-power-of-suggestion.md"
+        },
+        {
+          "slug": "competition-and-abundance",
+          "path": "categories/work-ethic-mindset/competition-and-abundance.md"
+        },
+        {
+          "slug": "never-get-into-fights",
+          "path": "categories/work-ethic-mindset/never-get-into-fights.md"
+        },
+        {
+          "slug": "elementary-school-play-testers",
+          "path": "categories/work-ethic-mindset/elementary-school-play-testers.md"
+        },
+        {
+          "slug": "column-persistence",
+          "path": "categories/work-ethic-mindset/column-persistence.md"
+        },
+        {
+          "slug": "try-telling-that-to-the-player",
+          "path": "categories/work-ethic-mindset/try-telling-that-to-the-player.md"
+        },
+        {
+          "slug": "game-development-isnt-a-game",
+          "path": "categories/work-ethic-mindset/game-development-isnt-a-game.md"
+        },
+        {
+          "slug": "presentations-are-all-about-speed",
+          "path": "categories/work-ethic-mindset/presentations-are-all-about-speed.md"
+        },
+        {
+          "slug": "hardship-game-endure",
+          "path": "categories/work-ethic-mindset/hardship-game-endure.md"
+        },
+        {
+          "slug": "directors-need-unique",
+          "path": "categories/work-ethic-mindset/directors-need-unique.md"
+        },
+        {
+          "slug": "creators-change-too",
+          "path": "categories/work-ethic-mindset/creators-change-too.md"
+        },
+        {
+          "slug": "the-power-of-words",
+          "path": "categories/work-ethic-mindset/the-power-of-words.md"
+        }
+      ]
+    },
+    {
+      "title": "Marketing & Communication",
+      "slug": "marketing-communication",
+      "path": "categories/marketing-communication/CATEGORY.md",
+      "description": "Strategies for promoting games, crafting trailers, and engaging with players.",
+      "when_to_read": [
+        "When planning marketing or community engagement."
+      ],
+      "core_terms": [
+        "analogy trap",
+        "marketing multiplicative",
+        "accurate representation"
+      ],
+      "entries": [
+        {
+          "slug": "treat-marketing-as-essential",
+          "path": "categories/marketing-communication/treat-marketing-as-essential.md"
+        },
+        {
+          "slug": "ensure-product-image-matches-reality",
+          "path": "categories/marketing-communication/ensure-product-image-matches-reality.md"
+        },
+        {
+          "slug": "use-demos-judiciously",
+          "path": "categories/marketing-communication/use-demos-judiciously.md"
+        },
+        {
+          "slug": "create-shareable-character-reveal-videos",
+          "path": "categories/marketing-communication/create-shareable-character-reveal-videos.md"
+        },
+        {
+          "slug": "produce-trailers-step-by-step",
+          "path": "categories/marketing-communication/produce-trailers-step-by-step.md"
+        },
+        {
+          "slug": "show-gameplay-first-in-trailers",
+          "path": "categories/marketing-communication/show-gameplay-first-in-trailers.md"
+        },
+        {
+          "slug": "official-websites",
+          "path": "categories/marketing-communication/official-websites.md"
+        },
+        {
+          "slug": "smash-bros-doj",
+          "path": "categories/marketing-communication/smash-bros-doj.md"
+        },
+        {
+          "slug": "beyond-market-analysis",
+          "path": "categories/marketing-communication/beyond-market-analysis.md"
+        },
+        {
+          "slug": "sustaining-information-flow",
+          "path": "categories/marketing-communication/sustaining-information-flow.md"
+        },
+        {
+          "slug": "marketing-is-multiplicative",
+          "path": "categories/marketing-communication/marketing-is-multiplicative.md"
+        },
+        {
+          "slug": "game-demos",
+          "path": "categories/marketing-communication/game-demos.md"
+        },
+        {
+          "slug": "making-a-living-making-games",
+          "path": "categories/marketing-communication/making-a-living-making-games.md"
+        },
+        {
+          "slug": "crafting-similar-games",
+          "path": "categories/marketing-communication/crafting-similar-games.md"
+        },
+        {
+          "slug": "avoiding-comparison-in-pitches",
+          "path": "categories/marketing-communication/avoiding-comparison-in-pitches.md"
+        },
+        {
+          "slug": "making-sequels",
+          "path": "categories/marketing-communication/making-sequels.md"
+        },
+        {
+          "slug": "all-stars-return-project",
+          "path": "categories/marketing-communication/all-stars-return-project.md"
+        },
+        {
+          "slug": "the-price-of-games",
+          "path": "categories/marketing-communication/the-price-of-games.md"
+        },
+        {
+          "slug": "fun-beyond-game-essence",
+          "path": "categories/marketing-communication/fun-beyond-game-essence.md"
+        },
+        {
+          "slug": "prep-your-proposals-hot-fast",
+          "path": "categories/marketing-communication/prep-your-proposals-hot-fast.md"
+        },
+        {
+          "slug": "writing-game-proposals",
+          "path": "categories/marketing-communication/writing-game-proposals.md"
+        },
+        {
+          "slug": "effective-presentation",
+          "path": "categories/marketing-communication/effective-presentation.md"
+        },
+        {
+          "slug": "proposal-writing",
+          "path": "categories/marketing-communication/proposal-writing.md"
+        },
+        {
+          "slug": "sound-feedback",
+          "path": "categories/marketing-communication/sound-feedback.md"
+        },
+        {
+          "slug": "show-gameplay",
+          "path": "categories/marketing-communication/show-gameplay.md"
+        }
+      ]
+    },
+    {
+      "title": "Programming & Tech",
+      "slug": "programming-tech",
+      "path": "categories/programming-tech/CATEGORY.md",
+      "description": "Technical best practices for code, parameters, and system design.",
+      "when_to_read": [
+        "When implementing game systems or optimizing performance."
+      ],
+      "core_terms": [
+        "parameterization",
+        "specification documentation"
+      ],
+      "entries": [
+        {
+          "slug": "knockback-in-super-smash-bros",
+          "path": "categories/programming-tech/knockback-in-super-smash-bros.md"
+        },
+        {
+          "slug": "unexpected-results",
+          "path": "categories/programming-tech/unexpected-results.md"
+        },
+        {
+          "slug": "online-updates",
+          "path": "categories/programming-tech/online-updates.md"
+        },
+        {
+          "slug": "minimize-display-latency",
+          "path": "categories/programming-tech/minimize-display-latency.md"
+        },
+        {
+          "slug": "manage-remote-work-productivity",
+          "path": "categories/programming-tech/manage-remote-work-productivity.md"
+        },
+        {
+          "slug": "set-up-a-lean-company-structure",
+          "path": "categories/programming-tech/set-up-a-lean-company-structure.md"
+        },
+        {
+          "slug": "plan-budgets-realistically",
+          "path": "categories/programming-tech/plan-budgets-realistically.md"
+        },
+        {
+          "slug": "organize-content-with-numbering",
+          "path": "categories/programming-tech/organize-content-with-numbering.md"
+        },
+        {
+          "slug": "crt-displays",
+          "path": "categories/programming-tech/crt-displays.md"
+        },
+        {
+          "slug": "long-ago-numbers-were-used-to-draw-pixel-art",
+          "path": "categories/programming-tech/long-ago-numbers-were-used-to-draw-pixel-art.md"
+        },
+        {
+          "slug": "family-basic",
+          "path": "categories/programming-tech/family-basic.md"
+        }
+      ]
+    },
+    {
+      "title": "Design Specifics",
+      "slug": "design-specifics",
+      "path": "categories/design-specifics/CATEGORY.md",
+      "description": "Detailed techniques for specific design elements like hit stop, screen shake, explosions, and poses.",
+      "when_to_read": [
+        "When polishing specific effects or animations."
+      ],
+      "core_terms": [
+        "hit stop",
+        "screen shake",
+        "flash, blast, smoke",
+        "kamae"
+      ],
+      "entries": [
+        {
+          "slug": "screen-shake",
+          "path": "categories/design-specifics/screen-shake.md"
+        },
+        {
+          "slug": "visual-effects-in-slow-motion",
+          "path": "categories/design-specifics/visual-effects-in-slow-motion.md"
+        },
+        {
+          "slug": "blade-trails",
+          "path": "categories/design-specifics/blade-trails.md"
+        },
+        {
+          "slug": "billboard-effects",
+          "path": "categories/design-specifics/billboard-effects.md"
+        },
+        {
+          "slug": "particle-optimization",
+          "path": "categories/design-specifics/particle-optimization.md"
+        },
+        {
+          "slug": "wind-cut-techniques",
+          "path": "categories/design-specifics/wind-cut-techniques.md"
+        },
+        {
+          "slug": "h-effects-1",
+          "path": "categories/design-specifics/h-effects-1.md"
+        },
+        {
+          "slug": "the-limitations-of-particle-effects",
+          "path": "categories/design-specifics/the-limitations-of-particle-effects.md"
+        },
+        {
+          "slug": "flashing-effects",
+          "path": "categories/design-specifics/flashing-effects.md"
+        },
+        {
+          "slug": "hit-marks",
+          "path": "categories/design-specifics/hit-marks.md"
+        },
+        {
+          "slug": "making-leadins-instant-impactful",
+          "path": "categories/design-specifics/making-leadins-instant-impactful.md"
+        },
+        {
+          "slug": "dont-anchor-center-point",
+          "path": "categories/design-specifics/dont-anchor-center-point.md"
+        },
+        {
+          "slug": "modern-quality-of-life",
+          "path": "categories/design-specifics/modern-quality-of-life.md"
+        },
+        {
+          "slug": "a-small-window-into-the-world",
+          "path": "categories/design-specifics/a-small-window-into-the-world.md"
+        },
+        {
+          "slug": "the-fiends-cauldron",
+          "path": "categories/design-specifics/the-fiends-cauldron.md"
+        },
+        {
+          "slug": "potential-of-one-button",
+          "path": "categories/design-specifics/potential-of-one-button.md"
+        },
+        {
+          "slug": "let-players-cheat",
+          "path": "categories/design-specifics/let-players-cheat.md"
+        },
+        {
+          "slug": "the-pros-and-cons-of-leaderboards",
+          "path": "categories/design-specifics/the-pros-and-cons-of-leaderboards.md"
+        },
+        {
+          "slug": "customization-lets-your-imagination-play",
+          "path": "categories/design-specifics/customization-lets-your-imagination-play.md"
+        },
+        {
+          "slug": "its-easier-if-they-already-know",
+          "path": "categories/design-specifics/its-easier-if-they-already-know.md"
+        },
+        {
+          "slug": "clarity-vs-style",
+          "path": "categories/design-specifics/clarity-vs-style.md"
+        },
+        {
+          "slug": "text-size",
+          "path": "categories/design-specifics/text-size.md"
+        },
+        {
+          "slug": "handicap-systems",
+          "path": "categories/design-specifics/handicap-systems.md"
+        },
+        {
+          "slug": "work-simulation-games",
+          "path": "categories/design-specifics/work-simulation-games.md"
+        },
+        {
+          "slug": "making-imaginary-feel-real",
+          "path": "categories/design-specifics/making-imaginary-feel-real.md"
+        },
+        {
+          "slug": "balancing-ambient-sounds",
+          "path": "categories/design-specifics/balancing-ambient-sounds.md"
+        },
+        {
+          "slug": "making-effects-right-size",
+          "path": "categories/design-specifics/making-effects-right-size.md"
+        },
+        {
+          "slug": "presenting-scores",
+          "path": "categories/design-specifics/presenting-scores.md"
+        },
+        {
+          "slug": "giving-weight-to-buttons",
+          "path": "categories/design-specifics/giving-weight-to-buttons.md"
+        },
+        {
+          "slug": "down-with-lag",
+          "path": "categories/design-specifics/down-with-lag.md"
+        },
+        {
+          "slug": "game-awards",
+          "path": "categories/design-specifics/game-awards.md"
+        }
+      ]
+    },
+    {
+      "title": "Game Concepts & Case Studies",
+      "slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/CATEGORY.md",
+      "description": "Deep dives into specific games and their design innovations.",
+      "when_to_read": [
+        "When seeking inspiration or historical context."
+      ],
+      "core_terms": [],
+      "entries": [
+        {
+          "slug": "super-smash-bros",
+          "path": "categories/game-concepts-case-studies/super-smash-bros.md"
+        },
+        {
+          "slug": "super-smash-bros-melee",
+          "path": "categories/game-concepts-case-studies/super-smash-bros-melee.md"
+        },
+        {
+          "slug": "super-smash-bros-brawl",
+          "path": "categories/game-concepts-case-studies/super-smash-bros-brawl.md"
+        },
+        {
+          "slug": "super-smash-bros-for-3ds-wii-u",
+          "path": "categories/game-concepts-case-studies/super-smash-bros-for-3ds-wii-u.md"
+        },
+        {
+          "slug": "kirbys-dream-land",
+          "path": "categories/game-concepts-case-studies/kirbys-dream-land.md"
+        },
+        {
+          "slug": "kirby-super-star",
+          "path": "categories/game-concepts-case-studies/kirby-super-star.md"
+        },
+        {
+          "slug": "kirbys-adventure",
+          "path": "categories/game-concepts-case-studies/kirbys-adventure.md"
+        },
+        {
+          "slug": "kirby-air-ride",
+          "path": "categories/game-concepts-case-studies/kirby-air-ride.md"
+        },
+        {
+          "slug": "meteos-innovation",
+          "path": "categories/game-concepts-case-studies/meteos-innovation.md"
+        },
+        {
+          "slug": "kid-icarus-rising",
+          "path": "categories/game-concepts-case-studies/kid-icarus-rising.md"
+        },
+        {
+          "slug": "game-and-watch-designs",
+          "path": "categories/game-concepts-case-studies/game-and-watch-designs.md"
+        },
+        {
+          "slug": "guidelines",
+          "path": "categories/game-concepts-case-studies/guidelines.md"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "title": "Risk and Reward: The Core of Game Essence",
+      "slug": "risk-and-reward",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/risk-and-reward.md",
+      "summary": "Game essence is defined by the trade-off between risk and reward. Classic examples like Space Invaders and Super Mario show how proximity to danger increases both tension and payoff.",
+      "read_next": [
+        "squeeze-and-release"
+      ],
+      "source_videos": [
+        "EehkCHMll2o",
+        "FXqEykD5Ub4"
+      ]
+    },
+    {
+      "title": "Squeeze and Release",
+      "slug": "squeeze-and-release",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/squeeze-and-release.md",
+      "summary": "Game fun originates from applying pressure (enemies, puzzles) and then releasing it with rewards. Design a clear pressure-release cycle.",
+      "read_next": [
+        "risk-and-reward"
+      ],
+      "source_videos": [
+        "6sbJdEGZA-o",
+        "TYh5SJb5gWk"
+      ]
+    },
+    {
+      "title": "Game Essence in RPGs",
+      "slug": "game-essence-in-rpgs",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/game-essence-in-rpgs.md",
+      "summary": "RPGs balance risk and reward through dangerous areas, resource management, and weakness systems.",
+      "read_next": [
+        "risk-and-reward"
+      ],
+      "source_videos": [
+        "BFGkFHb2lBw"
+      ]
+    },
+    {
+      "title": "Game Essence in Falling-Block Puzzle Games",
+      "slug": "game-essence-in-falling-block-puzzle-games",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/game-essence-in-falling-block-puzzle-games.md",
+      "summary": "The key difference between pure puzzles and falling-block games is risk vs return. Time pressure and speed create tension.",
+      "read_next": [
+        "risk-and-reward"
+      ],
+      "source_videos": [
+        "QOkY6BULsgo"
+      ]
+    },
+    {
+      "title": "Game Essence in Shooting Games",
+      "slug": "game-essence-in-shooting-games",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/game-essence-in-shooting-games.md",
+      "summary": "Risk-reward in shooters: positioning near enemies yields higher rewards; understand why a mechanic is fun, not just imitate.",
+      "read_next": [
+        "more-game-essence-means-less-broad-appeal"
+      ],
+      "source_videos": [
+        "iN3IyqPjLkc"
+      ]
+    },
+    {
+      "title": "Do We Really Need Enemies?",
+      "slug": "do-we-need-enemies",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/do-we-need-enemies.md",
+      "summary": "The core of game satisfaction is the pressure-release cycle. Enemies are a common pressure source, but you can use other mechanisms like puzzles, time limits, or resource management.",
+      "read_next": [
+        "consider-rewards-first"
+      ],
+      "source_videos": [
+        "atqS7SImuBc"
+      ]
+    },
+    {
+      "title": "Falling Sells the Feeling of Flight",
+      "slug": "falling-sells-flight",
+      "category_slug": "game-essence",
+      "path": "categories/game-essence/falling-sells-flight.md",
+      "summary": "To make flying feel exhilarating, introduce the risk of falling (or other penalties). Players appreciate freedom more when there is danger.",
+      "read_next": [
+        "do-we-need-enemies"
+      ],
+      "source_videos": [
+        "j45EIuChfqs"
+      ]
+    },
+    {
+      "title": "Difficulty and Player Retention",
+      "slug": "difficulty-and-player-retention",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/difficulty-and-player-retention.md",
+      "summary": "Games are most exciting on the edge of victory and defeat, but excessive difficulty can drive players away. Provide non-humiliating escape routes like difficulty adjustment or skip options.",
+      "read_next": [
+        "player-guidance-and-freedom"
+      ],
+      "source_videos": [
+        "qQUWE5zSJIQ",
+        "u_LHFSxrKAA"
+      ]
+    },
+    {
+      "title": "Player Guidance and Freedom",
+      "slug": "player-guidance-and-freedom",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/player-guidance-and-freedom.md",
+      "summary": "Decide how much to guide the player. Explicit instructions help weaker players but reduce freedom. More open designs encourage exploration but may lead to confusion.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "qQUWE5zSJIQ"
+      ]
+    },
+    {
+      "title": "Mandatory Strategies and Strategic Balance",
+      "slug": "mandatory-strategies-and-strategic-balance",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/mandatory-strategies-and-strategic-balance.md",
+      "summary": "Nintendo often designs boss fights with clear mandatory strategies. This provides focus but can feel tutorial-like. Balance forced guidance with player autonomy.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "U1b2OXdNcUY"
+      ]
+    },
+    {
+      "title": "Game Essence in Strategy Games",
+      "slug": "game-essence-in-strategy-games",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/game-essence-in-strategy-games.md",
+      "summary": "Strategy games use rock-paper-scissors style counters, cost differences, and positional elements to create meaningful decisions.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "3eG3expp5KM"
+      ]
+    },
+    {
+      "title": "Average and Mediocre Are the Same Thing",
+      "slug": "average-and-mediocre-are-the-same-thing",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/average-and-mediocre-are-the-same-thing.md",
+      "summary": "Over-balancing leads to homogenization. In Smash, characters have distinct strengths and weaknesses with win rates ranging only from 47% to 51% across 87 characters—proving individuality and balance can coexist.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "KW4x-_Y8BmM"
+      ]
+    },
+    {
+      "title": "More Game Essence Means Less Broad Appeal",
+      "slug": "more-game-essence-means-less-broad-appeal",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/more-game-essence-means-less-broad-appeal.md",
+      "summary": "High risk-reward design increases game essence but decreases broad appeal. Examples from Mario and Kirby illustrate this trade-off.",
+      "read_next": [
+        "game-essence-in-shooting-games"
+      ],
+      "source_videos": [
+        "ML5wdEWpTuA"
+      ]
+    },
+    {
+      "title": "Difficulty Balance and Player Agency",
+      "slug": "difficulty-balance",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/difficulty-balance.md",
+      "summary": "Games are most fun at the edge of win/lose, but being unable to complete is frustrating. Provide difficulty options, skip, or scaling to avoid abandonment.",
+      "read_next": [
+        "final-output-post-processing"
+      ],
+      "source_videos": [
+        "G3eacnEqdV0"
+      ]
+    },
+    {
+      "title": "Teach by Doing",
+      "slug": "tutorial-design",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/tutorial-design.md",
+      "summary": "Design tutorials that let players learn through natural gameplay rather than separate practice levels.",
+      "read_next": [
+        "praise-players"
+      ],
+      "source_videos": [
+        "QeR6ysgzTBU"
+      ]
+    },
+    {
+      "title": "Teaching Players How to Play",
+      "slug": "teaching-players-how-to-play",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/teaching-players-how-to-play.md",
+      "summary": "Avoid long text tutorials and boring practice fields. Embed learning into gameplay via initial levels with contextual prompts.",
+      "read_next": [
+        "its-easier-if-they-already-know"
+      ],
+      "source_videos": [
+        "Icl-jMlz1iY"
+      ]
+    },
+    {
+      "title": "Making Tutorials Feel Natural",
+      "slug": "making-tutorials-feel-natural",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/making-tutorials-feel-natural.md",
+      "summary": "Tutorials should be integrated into gameplay, not separate training. Use visual cues but ensure they cover all key configurations.",
+      "read_next": [
+        "game-essence-in-falling-block-puzzle-games"
+      ],
+      "source_videos": [
+        "Xz53DEwuAcU"
+      ]
+    },
+    {
+      "title": "Reward System Design",
+      "slug": "reward-system-design",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/reward-system-design.md",
+      "summary": "Make rewards visible and desirable. Show progress bars (XP to next level) to motivate players. Use clear, immediate feedback for every action.",
+      "read_next": [
+        "fetch-quest"
+      ],
+      "source_videos": [
+        "E4ZUgPoDrvY"
+      ]
+    },
+    {
+      "title": "Design Rewards with Consumption",
+      "slug": "reward-consumption-pairing",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/reward-consumption-pairing.md",
+      "summary": "Pair rewards with meaningful consumption mechanics to maintain player motivation.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "QeR6ysgzTBU",
+        "6sbJdEGZA-o"
+      ]
+    },
+    {
+      "title": "Consider Rewards First",
+      "slug": "consider-rewards-first",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/consider-rewards-first.md",
+      "summary": "Rewards are the primary driver of player motivation. Design the reward system early, including numerical, collectible, and unlockable rewards.",
+      "read_next": [
+        "do-we-need-enemies"
+      ],
+      "source_videos": [
+        "SpwQkNzNsXk"
+      ]
+    },
+    {
+      "title": "Keeping Rewards in Sight",
+      "slug": "keeping-rewards-in-sight",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/keeping-rewards-in-sight.md",
+      "summary": "Display progress toward rewards to motivate players; use scarce high-impact items that encourage saving.",
+      "read_next": [
+        "fun-beyond-game-essence"
+      ],
+      "source_videos": [
+        "KePsEzN-IAM"
+      ]
+    },
+    {
+      "title": "Good Errands and Bad Errands",
+      "slug": "good-bad-errands",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/good-bad-errands.md",
+      "summary": "Fetch quests can be satisfying if designed well: appropriate rewards, small incentives along the way, multiple strategies, quick return, compelling story.",
+      "read_next": [
+        "say-no-to-slow"
+      ],
+      "source_videos": [
+        "IM9P9NIKo10"
+      ]
+    },
+    {
+      "title": "Fetch Quest Design",
+      "slug": "fetch-quest",
+      "category_slug": "game-design-principles",
+      "path": "categories/game-design-principles/fetch-quest.md",
+      "summary": "Good fetch quests satisfy five conditions: appropriate reward, short gratification spans, freedom of approach, quick extraction, and anticipation of future benefit.",
+      "read_next": [
+        "difficulty-and-player-retention"
+      ],
+      "source_videos": [
+        "E4ZUgPoDrvY"
+      ]
+    },
+    {
+      "title": "Readability vs Style",
+      "slug": "readability-vs-style",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/readability-vs-style.md",
+      "summary": "Balance user-friendly clarity with stylish visuals, but never sacrifice readability for the sake of aesthetics.",
+      "read_next": [
+        "hud-design",
+        "accessibility-options"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "HUD Design",
+      "slug": "hud-design",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/hud-design.md",
+      "summary": "Design HUD elements that inform without distracting; consider dynamic visibility and thematic integration.",
+      "read_next": [
+        "menu-color-coding",
+        "icon-sizing"
+      ],
+      "source_videos": [
+        "a_HB81ujHHE",
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Accessibility Options",
+      "slug": "accessibility-options",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/accessibility-options.md",
+      "summary": "Provide comprehensive accessibility settings to make the game playable by a wider audience.",
+      "read_next": [
+        "hud-design"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Loading Screen Design",
+      "slug": "loading-screen-design",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/loading-screen-design.md",
+      "summary": "Handle loading screens by blending them into gameplay or keeping them informative and brief.",
+      "read_next": [
+        "readability-vs-style"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Text Rendering & Localization",
+      "slug": "text-rendering",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/text-rendering.md",
+      "summary": "Consider language-specific text sizes and allow localizers to adjust text animation parameters for better emotional impact across cultures.",
+      "read_next": [
+        "readability-vs-style"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Menu Color Coding",
+      "slug": "menu-color-coding",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/menu-color-coding.md",
+      "summary": "Use distinct color schemes for different menu sections to aid navigation, but limit colors per screen to avoid chaos.",
+      "read_next": [
+        "icon-sizing"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Icon Sizing by Importance",
+      "slug": "icon-sizing",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/icon-sizing.md",
+      "summary": "Make icons larger for frequently used functions and smaller for secondary ones, but watch out for text overflow in different languages.",
+      "read_next": [
+        "menu-color-coding"
+      ],
+      "source_videos": [
+        "9LKqeXQl31U"
+      ]
+    },
+    {
+      "title": "Make Important Elements Bigger",
+      "slug": "make-important-elements-bigger",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/make-important-elements-bigger.md",
+      "summary": "Scale UI icons by importance to intuitively guide users. Larger icons for frequent actions, smaller for rare ones.",
+      "read_next": [
+        "readability-vs-style"
+      ],
+      "source_videos": [
+        "va8wt2yGviY"
+      ]
+    },
+    {
+      "title": "Color-Coding Your Game UI",
+      "slug": "color-coding-ui",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/color-coding-ui.md",
+      "summary": "Use color coding to differentiate UI sections but avoid clutter; colors must suit the game's tone.",
+      "read_next": [
+        "hit-marks"
+      ],
+      "source_videos": [
+        "CWvLMK4OKko"
+      ]
+    },
+    {
+      "title": "Adding Help Text to Menus",
+      "slug": "adding-help-text-to-menus",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/adding-help-text-to-menus.md",
+      "summary": "Menu items need explanatory text, but avoid using the same words as the item itself. Use simple, jargon-free language.",
+      "read_next": [
+        "making-things-clear-even-without-words"
+      ],
+      "source_videos": [
+        "mWIbb1l7Wlw"
+      ]
+    },
+    {
+      "title": "Making Things Clear, Even Without Words",
+      "slug": "making-things-clear-even-without-words",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/making-things-clear-even-without-words.md",
+      "summary": "Use icons, character graphics, and default actions so players can understand and play even without knowing the language.",
+      "read_next": [
+        "adding-help-text-to-menus"
+      ],
+      "source_videos": [
+        "psGx8fOlus0"
+      ]
+    },
+    {
+      "title": "Maps Are Game Screens, Too",
+      "slug": "maps-game-screens",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/maps-game-screens.md",
+      "summary": "Warns that players often stare at maps instead of the main screen. Use transparent maps, enhance main screen with directional cues, and use environmental landmarks.",
+      "read_next": [
+        "menus-define-world"
+      ],
+      "source_videos": [
+        "-Fhj07C1ou0"
+      ]
+    },
+    {
+      "title": "Menus Define Your World",
+      "slug": "menus-define-world",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/menus-define-world.md",
+      "summary": "UI and font choices dramatically change a game's target audience and world feel. Ensure readability and holistic design.",
+      "read_next": [
+        "basics-pixel-art"
+      ],
+      "source_videos": [
+        "pivfg2DrFfY"
+      ]
+    },
+    {
+      "title": "Let Them Skip, Let Them Pause",
+      "slug": "let-them-skip-let-them-pause",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/let-them-skip-let-them-pause.md",
+      "summary": "All non-interactive sequences must be skippable and pausable. Modern players expect control over their time.",
+      "read_next": [
+        "teaching-players-how-to-play",
+        "customization-lets-your-imagination-play"
+      ],
+      "source_videos": [
+        "Y4-eS6Ezui8"
+      ]
+    },
+    {
+      "title": "Button Settings and Key Configuration",
+      "slug": "button-settings",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/button-settings.md",
+      "summary": "Provide button remapping even in simple games. Use a graphical controller UI; allow duplicate bindings; save configurations per player.",
+      "read_next": [
+        "presenting-scores"
+      ],
+      "source_videos": [
+        "8nfMt4oG6hg"
+      ]
+    },
+    {
+      "title": "Button Responsiveness",
+      "slug": "button-responsiveness",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/button-responsiveness.md",
+      "summary": "Every button press must yield a reaction—even if trivial—to avoid player confusion. Map confirm to multiple buttons for accessibility.",
+      "read_next": [
+        "readability-vs-style"
+      ],
+      "source_videos": [
+        "eia2IAmvtKI"
+      ]
+    },
+    {
+      "title": "Fast Menu Selection",
+      "slug": "fast-menu-selection",
+      "category_slug": "ui-ux-design",
+      "path": "categories/ui-ux-design/fast-menu-selection.md",
+      "summary": "Proposes adding a scroll wheel to game controllers for rapid menu navigation. The principle of fast, satisfying input persists.",
+      "read_next": [
+        "readability-vs-style"
+      ],
+      "source_videos": [
+        "-_3ZnSiwlnc"
+      ]
+    },
+    {
+      "title": "Character Silhouette and Readability",
+      "slug": "character-silhouette-and-readability",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/character-silhouette-and-readability.md",
+      "summary": "Distinct silhouettes are crucial for character recognition in fast-paced games. Adjust characters to ensure their profile is immediately identifiable.",
+      "read_next": [
+        "graphical-polish-and-consistency",
+        "effective-use-of-post-processing"
+      ],
+      "source_videos": [
+        "cKf-XVXleK8"
+      ]
+    },
+    {
+      "title": "Graphical Polish and Consistency",
+      "slug": "graphical-polish-and-consistency",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/graphical-polish-and-consistency.md",
+      "summary": "Small adjustments to characters and environments elevate the final product. Pay attention to foot placement, color palettes, and animation direction.",
+      "read_next": [
+        "character-silhouette-and-readability",
+        "effective-use-of-post-processing"
+      ],
+      "source_videos": [
+        "cKf-XVXleK8"
+      ]
+    },
+    {
+      "title": "Effective Use of Post-Processing",
+      "slug": "effective-use-of-post-processing",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/effective-use-of-post-processing.md",
+      "summary": "Modern hardware allows frame buffer and shader effects that dramatically improve visual quality. Use subtly to unify art style.",
+      "read_next": [
+        "graphical-polish-and-consistency",
+        "character-silhouette-and-readability"
+      ],
+      "source_videos": [
+        "cKf-XVXleK8"
+      ]
+    },
+    {
+      "title": "Dealing With Color Disparity",
+      "slug": "dealing-with-color-disparity",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/dealing-with-color-disparity.md",
+      "summary": "Monitor inconsistencies cause color differences; calibrate tools, use neutral lighting, and rely on a reference display for final approval.",
+      "read_next": [
+        "making-things-look-miniature"
+      ],
+      "source_videos": [
+        "240NQ--7xvU"
+      ]
+    },
+    {
+      "title": "Making Things Look Miniature",
+      "slug": "making-things-look-miniature",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/making-things-look-miniature.md",
+      "summary": "To create a miniature effect, blur top/bottom (shallow depth of field), increase saturation, and reduce blue (remove air perspective).",
+      "read_next": [
+        "dealing-with-color-disparity"
+      ],
+      "source_videos": [
+        "omeFOX21-wc"
+      ]
+    },
+    {
+      "title": "Get the Sense of Scale Right",
+      "slug": "sense-of-scale-right",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/sense-of-scale-right.md",
+      "summary": "Large objects in games often look like miniatures. Fix this by avoiding repetitive textures, reducing saturated colors, controlling specular highlights, and using normal maps consistent with size.",
+      "read_next": [
+        "attack-poses"
+      ],
+      "source_videos": [
+        "A6Rbb5sK4nI"
+      ]
+    },
+    {
+      "title": "Low-Resolution Pixel Art Techniques",
+      "slug": "low-resolution-pixel-art",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/low-resolution-pixel-art.md",
+      "summary": "For small sprites, use odd pixel widths to get a center line for smoother curves. Use highlight/edge manipulation for material feel.",
+      "read_next": [
+        "team-art-style-unification"
+      ],
+      "source_videos": [
+        "ShB7mKj6Mag"
+      ]
+    },
+    {
+      "title": "The Basics of Pixel Art",
+      "slug": "basics-pixel-art",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/basics-pixel-art.md",
+      "summary": "Fundamental pixel art techniques: use odd pixel dimensions for circles, checkerboard dithering for gradients, and add one extra color for highlights.",
+      "read_next": [
+        "maps-game-screens"
+      ],
+      "source_videos": [
+        "NDno0U5UxSI"
+      ]
+    },
+    {
+      "title": "Final Output Post-Processing",
+      "slug": "final-output-post-processing",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/final-output-post-processing.md",
+      "summary": "On high-end hardware, post-processing is more important than raw polygon count. Frame buffer manipulation defines visual quality.",
+      "read_next": [
+        "color-accessibility"
+      ],
+      "source_videos": [
+        "MGPwDINsVbU"
+      ]
+    },
+    {
+      "title": "Color Accessibility",
+      "slug": "color-accessibility",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/color-accessibility.md",
+      "summary": "Ensure game elements are distinguishable for colorblind players by using brightness differences and color blindness simulation filters.",
+      "read_next": [
+        "character-silhouette-and-readability"
+      ],
+      "source_videos": [
+        "obnjR8KJ9nk"
+      ]
+    },
+    {
+      "title": "Team Art Style Unification",
+      "slug": "team-art-style-unification",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/team-art-style-unification.md",
+      "summary": "When mixing characters from different franchises, unify via: lowered saturation, consistent texture detail, adjusted body proportions, redesigned details, and uniform expression style.",
+      "read_next": [
+        "character-silhouette-and-readability"
+      ],
+      "source_videos": [
+        "ShB7mKj6Mag"
+      ]
+    },
+    {
+      "title": "A Fight Between Live Action and Animation",
+      "slug": "a-fight-between-live-action-and-animation",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/a-fight-between-live-action-and-animation.md",
+      "summary": "Five techniques to unify cartoon and realistic characters: desaturation, balanced texture, proportion adjustment, re-design, realistic motions.",
+      "read_next": [
+        "character-silhouette-and-readability"
+      ],
+      "source_videos": [
+        "luB-5GqW55Q"
+      ]
+    },
+    {
+      "title": "Graphics and Fun",
+      "slug": "graphics-and-fun",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/graphics-and-fun.md",
+      "summary": "Good graphics enhance immersion and player engagement, especially in atmospheric games and online storefronts.",
+      "read_next": [
+        "billboard-effects"
+      ],
+      "source_videos": [
+        "VM-kH-j9_OQ"
+      ]
+    },
+    {
+      "title": "F: Graphics 1 (Category Compilation)",
+      "slug": "f-graphics-1-category-compilation-01-06",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/f-graphics-1-category-compilation-01-06.md",
+      "summary": "Compilation of graphics supervision tips: draw reflected light, emphasize hit-detection areas, allocate performance budget, adjust scale via texture/lighting, use Photoshop for quick mockups.",
+      "read_next": [
+        "manga-like-visuals"
+      ],
+      "source_videos": [
+        "pwbfnlZegNs"
+      ]
+    },
+    {
+      "title": "Manga-like Visuals",
+      "slug": "manga-like-visuals",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/manga-like-visuals.md",
+      "summary": "Embrace non-realistic techniques: mouths visible sideways, eyes seen through glasses frames, squash-and-stretch from animation. Use shape animation for elastic effects.",
+      "read_next": [
+        "character-silhouette-and-readability"
+      ],
+      "source_videos": [
+        "U9lQpn67Wos"
+      ]
+    },
+    {
+      "title": "Let Your Characters Shine",
+      "slug": "let-your-characters-shine",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/let-your-characters-shine.md",
+      "summary": "Prevent effects from obscuring characters: in 2D, use higher render priority; in 3D, adjust depth test or render order. Use edge lights.",
+      "read_next": [
+        "distinguishing-between-major-and-minor-elements",
+        "eight-hit-stop-techniques"
+      ],
+      "source_videos": [
+        "0ucvynuIe-o"
+      ]
+    },
+    {
+      "title": "Distinguishing Between Major and Minor Elements",
+      "slug": "distinguishing-between-major-and-minor-elements",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/distinguishing-between-major-and-minor-elements.md",
+      "summary": "Allocate graphical resources wisely: prioritize screen center, character detail over background, use LOD, cut unnecessary detail.",
+      "read_next": [
+        "let-your-characters-shine",
+        "making-your-game-easy-to-tune"
+      ],
+      "source_videos": [
+        "NBXt-Uq7dHg"
+      ]
+    },
+    {
+      "title": "Emphasize Objects with Collision",
+      "slug": "emphasize-objects-with-collision",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/emphasize-objects-with-collision.md",
+      "summary": "Make collision-enabled areas visually prominent; use atmospheric perspective and reduced contrast for non-collision areas.",
+      "read_next": [
+        "strike-a-balance-with-sound-effects"
+      ],
+      "source_videos": [
+        "FfPN4ZGgBpo"
+      ]
+    },
+    {
+      "title": "Draw the Light, Not the Asset",
+      "slug": "draw-the-light-not-the-asset",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/draw-the-light-not-the-asset.md",
+      "summary": "Graphic drawing should represent reflected light using color variations, spray gradients, and atmospheric perspective.",
+      "read_next": [
+        "make-it-pop"
+      ],
+      "source_videos": [
+        "FuAtKjEuck8"
+      ]
+    },
+    {
+      "title": "Make It Pop: Visual Effects",
+      "slug": "make-it-pop",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/make-it-pop.md",
+      "summary": "Use color addition for glow but avoid overuse; combine with hard-edged effects and dark elements for contrast.",
+      "read_next": [
+        "draw-the-light-not-the-asset"
+      ],
+      "source_videos": [
+        "kcYDrtRvuKg"
+      ]
+    },
+    {
+      "title": "Flash, Blast, and Smoke: Explosion Effects",
+      "slug": "flash-blast-smoke",
+      "category_slug": "visual-graphics",
+      "path": "categories/visual-graphics/flash-blast-smoke.md",
+      "summary": "A classic explosion effect consists of three phases: a quick flash, a central blast, and smoke to fade out. Consider background color and screen shake.",
+      "read_next": [
+        "making-leadins-instant-impactful"
+      ],
+      "source_videos": [
+        "ZDopYzDX-Jg"
+      ]
+    },
+    {
+      "title": "Hit Stop Mechanics",
+      "slug": "hit-stop-mechanics",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/hit-stop-mechanics.md",
+      "summary": "Hit stop is a brief pause on attack impact that dramatically improves combat feel. Ultimate implements seven special variations for nuanced feedback.",
+      "read_next": [
+        "eight-hit-stop-techniques"
+      ],
+      "source_videos": [
+        "5MBxBsF6-vg"
+      ]
+    },
+    {
+      "title": "Eight Hit Stop Techniques",
+      "slug": "eight-hit-stop-techniques",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/eight-hit-stop-techniques.md",
+      "summary": "Details seven special hit stop techniques used in Super Smash Bros. Ultimate: larger shake on receiver, no hitbox offset, directional shake control, amplitude decay, adjustable pause length, smooth pose transition, slight attacker movement.",
+      "read_next": [
+        "breaking-down-attack-animations"
+      ],
+      "source_videos": [
+        "tycbMSjDDLg"
+      ]
+    },
+    {
+      "title": "Stop for Big Moments",
+      "slug": "stop-for-big-moments",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/stop-for-big-moments.md",
+      "summary": "Hit stop and boss stop enhance impact. Early games already used these techniques. Apply to various genres.",
+      "read_next": [
+        "frame-rates"
+      ],
+      "source_videos": [
+        "OdVkEOzdCPw"
+      ]
+    },
+    {
+      "title": "Breaking Down Attack Animations",
+      "slug": "breaking-down-attack-animations",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/breaking-down-attack-animations.md",
+      "summary": "Frame attack animation into four phases: idle, start-up, attack, follow-through. Emphasize strong first frame, hit stop on contact, and cancel frames in follow-through.",
+      "read_next": [
+        "eight-hit-stop-techniques"
+      ],
+      "source_videos": [
+        "LewXWM7HDd8"
+      ]
+    },
+    {
+      "title": "Always Keep Attack Collision in Mind",
+      "slug": "always-keep-attack-collision-in-mind",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/always-keep-attack-collision-in-mind.md",
+      "summary": "Attack collision areas are often larger than visual models to ensure hits connect. Animators must design motions with collision in mind.",
+      "read_next": [
+        "flashing-effects"
+      ],
+      "source_videos": [
+        "rwwF_4blK-o"
+      ]
+    },
+    {
+      "title": "Attack Poses",
+      "slug": "attack-poses",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/attack-poses.md",
+      "summary": "In action games, the pose during hitstop is critical for feel. Make poses exaggerated: cross the body's midline, avoid symmetry, twist torso, clear silhouettes.",
+      "read_next": [
+        "learn-count-frames"
+      ],
+      "source_videos": [
+        "99gdMDF7V2E"
+      ]
+    },
+    {
+      "title": "Center of Gravity Shift",
+      "slug": "center-of-gravity-shift",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/center-of-gravity-shift.md",
+      "summary": "Offset the rotation pivot of an object from its geometric center to make movement feel organic and lively.",
+      "read_next": [
+        "sprite-cycling"
+      ],
+      "source_videos": [
+        "jeA-m-Bzs04"
+      ]
+    },
+    {
+      "title": "Sprite Cycling for Wobble",
+      "slug": "sprite-cycling",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/sprite-cycling.md",
+      "summary": "Cycle a sprite's display position through a predefined pattern to simulate unsteady flight or wobble.",
+      "read_next": [
+        "center-of-gravity-shift"
+      ],
+      "source_videos": [
+        "jeA-m-Bzs04"
+      ]
+    },
+    {
+      "title": "Damage Animation Transition",
+      "slug": "damage-animation-transition",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/damage-animation-transition.md",
+      "summary": "When a character takes damage, the first frame of damage animation should be hit instantly (often via hit stop), then transition smoothly via interpolation from hit pose.",
+      "read_next": [
+        "extreme-keyframes"
+      ],
+      "source_videos": [
+        "vj-PewTwDV0"
+      ]
+    },
+    {
+      "title": "Extreme Keyframes for Sharp Animation",
+      "slug": "extreme-keyframes",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/extreme-keyframes.md",
+      "summary": "To keep 2D-style sharpness in 3D, exaggerate key poses beyond what looks natural; reduce intermediate frames to avoid softness.",
+      "read_next": [
+        "facial-expressions-exaggeration"
+      ],
+      "source_videos": [
+        "vj-PewTwDV0"
+      ]
+    },
+    {
+      "title": "Facial Expressions Exaggeration",
+      "slug": "facial-expressions-exaggeration",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/facial-expressions-exaggeration.md",
+      "summary": "Facial expressions need to be stronger than you think; show upper and lower whites of eyes, avoid closed teeth, exaggerate mouth shapes.",
+      "read_next": [
+        "extreme-keyframes"
+      ],
+      "source_videos": [
+        "vj-PewTwDV0"
+      ]
+    },
+    {
+      "title": "IK and FK Usage",
+      "slug": "ik-and-fk-usage",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/ik-and-fk-usage.md",
+      "summary": "Use IK for foot placement and end-effector tasks; FK for expressive arcs. Exaggerate joint rotations beyond 180° for impact.",
+      "read_next": [
+        "extreme-keyframes"
+      ],
+      "source_videos": [
+        "vj-PewTwDV0"
+      ]
+    },
+    {
+      "title": "Rotation on Two Axes",
+      "slug": "rotation-on-two-axes",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/rotation-on-two-axes.md",
+      "summary": "Single-axis rotation looks robotic. Always combine at least two axes and stagger their timing. Add anticipation and adjust speed curves.",
+      "read_next": [
+        "g-animation-1"
+      ],
+      "source_videos": [
+        "Mh7nTn9_r40"
+      ]
+    },
+    {
+      "title": "G: Animation 1 (Category Compilation)",
+      "slug": "g-animation-1",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/g-animation-1.md",
+      "summary": "Comprehensive animation workflow: start with text-based move list, use action figures for reference photos, break moves into four stages, exaggerate poses, use cancel frames.",
+      "read_next": [
+        "rotation-on-two-axes"
+      ],
+      "source_videos": [
+        "qZiIEfTGPjQ"
+      ]
+    },
+    {
+      "title": "Establishing Characters Through Their Design",
+      "slug": "establishing-characters-through-their-design",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/establishing-characters-through-their-design.md",
+      "summary": "Character design should prioritize silhouette recognizability, exaggeration of key features, and consistent poses to convey personality.",
+      "read_next": [
+        "g-animation-1"
+      ],
+      "source_videos": [
+        "PDjdquhVHU4"
+      ]
+    },
+    {
+      "title": "Flipped Animation",
+      "slug": "flipped-animation",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/flipped-animation.md",
+      "summary": "Mirror character poses and actions so opponents face each other toward the screen, improving visual information and spectacle in fighting games.",
+      "read_next": [
+        "blade-trails"
+      ],
+      "source_videos": [
+        "TJDMDxnWU5g"
+      ]
+    },
+    {
+      "title": "Animation Blending",
+      "slug": "animation-blending",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/animation-blending.md",
+      "summary": "Blend animations to create smooth transitions. Keep blend times short (0.1-0.3s) to preserve crispness. In 3D, use layered blending.",
+      "read_next": [
+        "motion-blur"
+      ],
+      "source_videos": [
+        "HYHajZ0wBfU"
+      ]
+    },
+    {
+      "title": "Motion Blur",
+      "slug": "motion-blur",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/motion-blur.md",
+      "summary": "Motion blur enhances speed feel but can reduce clarity. Use sparingly; provide intensity slider in options. Prefer artistic blur or hardware bloom.",
+      "read_next": [
+        "hit-stop-mechanics"
+      ],
+      "source_videos": [
+        "xAgkRtpAUFI"
+      ]
+    },
+    {
+      "title": "Squashing and Scaling in Animation",
+      "slug": "squash-and-scale",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/squash-and-scale.md",
+      "summary": "Apply squash and stretch to add weight and energy. Maintain volume conservation. For extra quality, combine with blend shapes or mesh deformation.",
+      "read_next": [
+        "hit-marks"
+      ],
+      "source_videos": [
+        "Sm0LAm4sJKc"
+      ]
+    },
+    {
+      "title": "Too Much is Just Right",
+      "slug": "too-much-is-just-right",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/too-much-is-just-right.md",
+      "summary": "For action animations, exaggerated motion that risks breaking the model is actually better; most attack animations are too limited.",
+      "read_next": [
+        "strike-a-balance-with-sound-effects"
+      ],
+      "source_videos": [
+        "zNBKzLzDKtM"
+      ]
+    },
+    {
+      "title": "Assigning Animations",
+      "slug": "assigning-animations",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/assigning-animations.md",
+      "summary": "Use move lists and action figure photography to specify actions; each character about 70-80 photos.",
+      "read_next": [
+        "giving-weight-to-buttons"
+      ],
+      "source_videos": [
+        "fV8xIP480qk"
+      ]
+    },
+    {
+      "title": "Animation Interpolation Pitfalls",
+      "slug": "animation-interpolation",
+      "category_slug": "animation-motion",
+      "path": "categories/animation-motion/animation-interpolation.md",
+      "summary": "Warn against over-relying on automatic interpolation when converting 2D to 3D. Manual keyframe adjustment and reducing intermediate frames produces sharper actions.",
+      "read_next": [
+        "graphics-and-fun"
+      ],
+      "source_videos": [
+        "oFwamE6Hy04"
+      ]
+    },
+    {
+      "title": "Audio Importance",
+      "slug": "audio-importance",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/audio-importance.md",
+      "summary": "No masterpiece has bad audio. Sound effects and music are as critical as graphics and gameplay; they are what players remember most.",
+      "read_next": [
+        "sfx-priority",
+        "bpm-selection"
+      ],
+      "source_videos": [
+        "5fqTlWgfCL0"
+      ]
+    },
+    {
+      "title": "BPM Selection",
+      "slug": "bpm-selection",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/bpm-selection.md",
+      "summary": "Match music BPM to the desired intensity: fast (130-170) for action, slower for exploration.",
+      "read_next": [
+        "modern-game-music"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "SFX Priority",
+      "slug": "sfx-priority",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/sfx-priority.md",
+      "summary": "Set volume levels for sound effects based on gameplay importance: K.O. sounds should be loudest, walking softest.",
+      "read_next": [
+        "multi-device-testing",
+        "realism-vs-exaggeration"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Multi-Device Audio Testing",
+      "slug": "multi-device-testing",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/multi-device-testing.md",
+      "summary": "Test audio on a range of devices from high-end headphones to cheap TV speakers to ensure it sounds good everywhere.",
+      "read_next": [
+        "sfx-priority"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Modern Game Music",
+      "slug": "modern-game-music",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/modern-game-music.md",
+      "summary": "With complex modern graphics, music should take a backseat; use ambient sounds and subtle variations of a main theme to create atmosphere.",
+      "read_next": [
+        "bpm-selection"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Realism vs Exaggeration in SFX",
+      "slug": "realism-vs-exaggeration",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/realism-vs-exaggeration.md",
+      "summary": "Choose sound style based on game's visual tone: exaggerated for arcade/action, realistic for simulation/horror.",
+      "read_next": [
+        "sfx-priority"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Voice Recording",
+      "slug": "voice-recording",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/voice-recording.md",
+      "summary": "Keep voice lines short and avoid excessive chatter during gameplay. Localize voices per region.",
+      "read_next": [
+        "music-production-flow"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Music Production Flow",
+      "slug": "music-production-flow",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/music-production-flow.md",
+      "summary": "When commissioning music, let composers choose tracks they are passionate about, but supervise to ensure melody identity is preserved.",
+      "read_next": [
+        "voice-recording"
+      ],
+      "source_videos": [
+        "dR9zcbWfP-w"
+      ]
+    },
+    {
+      "title": "Sound Effect Design: Attack and Reverb Control",
+      "slug": "sound-effect-design",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/sound-effect-design.md",
+      "summary": "For impactful sound effects, ensure the attack (initial peak) is strong and prominent, and avoid excessive reverb that muddies subsequent hits.",
+      "read_next": [
+        "reference-music-cautions"
+      ],
+      "source_videos": [
+        "sSF1e1nKNFE"
+      ]
+    },
+    {
+      "title": "Reference Music Cautions",
+      "slug": "reference-music-cautions",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/reference-music-cautions.md",
+      "summary": "When using existing music as reference, avoid being overly constrained by it; allow composers creative freedom.",
+      "read_next": [
+        "sound-effect-design"
+      ],
+      "source_videos": [
+        "sSF1e1nKNFE"
+      ]
+    },
+    {
+      "title": "Audio as Fiction and Non-Fiction",
+      "slug": "audio-as-fiction-and-non-fiction",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/audio-as-fiction-and-non-fiction.md",
+      "summary": "Game sound design needs balance between exaggeration and realism. Fighting games benefit from exaggerated sounds, while realistic games need authenticity.",
+      "read_next": [
+        "audio-importance"
+      ],
+      "source_videos": [
+        "6Ns03q8noEA"
+      ]
+    },
+    {
+      "title": "The Original Piece is Always Right",
+      "slug": "the-original-piece-is-always-right",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/the-original-piece-is-always-right.md",
+      "summary": "When remixing game music, respect the original as heard by players, even if it defies music theory.",
+      "read_next": [
+        "audio-importance"
+      ],
+      "source_videos": [
+        "2iWqCSO98jU"
+      ]
+    },
+    {
+      "title": "Strike a Balance with Sound Effects",
+      "slug": "strike-a-balance-with-sound-effects",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/strike-a-balance-with-sound-effects.md",
+      "summary": "Prioritize sound effect volume based on gameplay impact: K.O. sounds loudest, then hit sounds, then special moves, then movement.",
+      "read_next": [
+        "make-the-tempo-match-the-game"
+      ],
+      "source_videos": [
+        "qKjD5qbLUeI"
+      ]
+    },
+    {
+      "title": "Make the Tempo Match the Game",
+      "slug": "make-the-tempo-match-the-game",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/make-the-tempo-match-the-game.md",
+      "summary": "Music tempo should align with gameplay intensity; e.g., 130-170 BPM for battles, slower for exploration.",
+      "read_next": [
+        "strike-a-balance-with-sound-effects"
+      ],
+      "source_videos": [
+        "hGp2Jw5dLH8"
+      ]
+    },
+    {
+      "title": "Listen in Various Environments",
+      "slug": "listen-various-environments",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/listen-various-environments.md",
+      "summary": "Always test audio on multiple devices: headphones, cheap TV speakers, PC speakers. Avoid changing reference headphones once set.",
+      "read_next": [
+        "flash-blast-smoke"
+      ],
+      "source_videos": [
+        "WUy4lTUhj80"
+      ]
+    },
+    {
+      "title": "Famicom and NES Audio",
+      "slug": "famicom-and-nes-audio",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/famicom-and-nes-audio.md",
+      "summary": "Overview of Famicom/NES sound hardware: two pulse waves, one triangle, one noise, one DPCM. Later disk system added waveform memory; expansion chips caused regional differences.",
+      "read_next": [
+        "f-graphics-1-category-compilation-01-06"
+      ],
+      "source_videos": [
+        "eyQSb_tC0Fg"
+      ]
+    },
+    {
+      "title": "Using Other Songs for Audio Reference",
+      "slug": "using-other-songs-for-audio-reference",
+      "category_slug": "audio-design",
+      "path": "categories/audio-design/using-other-songs-for-audio-reference.md",
+      "summary": "Using existing songs as audio references can help but may limit creativity. Allow composers creative freedom.",
+      "read_next": [
+        "audio-importance"
+      ],
+      "source_videos": [
+        "heFZ6qQXfDw"
+      ]
+    },
+    {
+      "title": "Be Mindful of the Time Players Are Giving You",
+      "slug": "be-mindful-of-the-time-players-are-giving-you",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/be-mindful-of-the-time-players-are-giving-you.md",
+      "summary": "Player time is a cost, not free. Avoid advertising long playtimes upfront; make the game so engaging that players willingly invest time.",
+      "read_next": [
+        "being-kind-to-beginners"
+      ],
+      "source_videos": [
+        "-49L25Q0YAU"
+      ]
+    },
+    {
+      "title": "Say No to Slow!",
+      "slug": "say-no-to-slow",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/say-no-to-slow.md",
+      "summary": "Players universally dislike slowness: slow movement, long wait times, idle periods. Minimize all avoidable delays.",
+      "read_next": [
+        "good-bad-errands"
+      ],
+      "source_videos": [
+        "3qEKNxp_-Qs"
+      ]
+    },
+    {
+      "title": "Make Retries Quick",
+      "slug": "make-retries-quick",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/make-retries-quick.md",
+      "summary": "Minimize downtime after failure. Fast retries keep players engaged and increase tolerance for difficulty.",
+      "read_next": [
+        "fun-picking-sides"
+      ],
+      "source_videos": [
+        "oSi0wEJHLuA"
+      ]
+    },
+    {
+      "title": "Death Relief",
+      "slug": "death-relief",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/death-relief.md",
+      "summary": "In competitive games, players may feel relief when defeated due to quick respawns. Design for both sides to have fun.",
+      "read_next": [
+        "be-mindful-of-the-time-players-are-giving-you"
+      ],
+      "source_videos": [
+        "vDEJ0sXw8Ks"
+      ]
+    },
+    {
+      "title": "Praise the Player",
+      "slug": "praise-player",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/praise-player.md",
+      "summary": "Celebrate player actions with visual, audio, or text praises—even for minor achievements—to boost motivation.",
+      "read_next": [
+        "button-responsiveness"
+      ],
+      "source_videos": [
+        "fryDyXROp8A"
+      ]
+    },
+    {
+      "title": "Praise Players Constantly",
+      "slug": "praise-players",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/praise-players.md",
+      "summary": "Use positive feedback to celebrate player actions, even for opponent's mistakes.",
+      "read_next": [
+        "reward-system-design"
+      ],
+      "source_videos": [
+        "QeR6ysgzTBU"
+      ]
+    },
+    {
+      "title": "A World Without Footprints: Spoiler-Free Experience",
+      "slug": "world-without-footprints",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/world-without-footprints.md",
+      "summary": "To maximize personal discovery and emotion, avoid all trailers, guides, and gameplay videos until after finishing the game.",
+      "read_next": [
+        "presenting-scores"
+      ],
+      "source_videos": [
+        "GJJT8Yoxu_U"
+      ]
+    },
+    {
+      "title": "Enjoying Games Without Spoilers",
+      "slug": "enjoying-games-without-spoilers",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/enjoying-games-without-spoilers.md",
+      "summary": "Sakurai prefers to walk on untouched snow: avoid any spoilers, walkthroughs, or let's plays.",
+      "read_next": [
+        "respecting-player-time",
+        "embracing-games-of-all-eras"
+      ],
+      "source_videos": [
+        "UAiVjEKbQiE"
+      ]
+    },
+    {
+      "title": "Respecting Player Time",
+      "slug": "respecting-player-time",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/respecting-player-time.md",
+      "summary": "Games that boast hundreds of hours of content can backfire; time is a cost. Developers should respect player time by allowing skips, fast travel, efficient saving.",
+      "read_next": [
+        "enjoying-games-without-spoilers",
+        "embracing-games-of-all-eras"
+      ],
+      "source_videos": [
+        "u_LHFSxrKAA"
+      ]
+    },
+    {
+      "title": "Embracing Games of All Eras",
+      "slug": "embracing-games-of-all-eras",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/embracing-games-of-all-eras.md",
+      "summary": "Sakurai shares his childhood experiences and encourages players to explore older games to appreciate the medium's evolution.",
+      "read_next": [
+        "enjoying-games-without-spoilers"
+      ],
+      "source_videos": [
+        "K2G-MOEDlxk",
+        "UAiVjEKbQiE"
+      ]
+    },
+    {
+      "title": "The Fun in Picking Sides",
+      "slug": "fun-picking-sides",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/fun-picking-sides.md",
+      "summary": "Choosing a side increases engagement in competitive games. Use prediction mechanics for emotional investment.",
+      "read_next": [
+        "branching-tastes"
+      ],
+      "source_videos": [
+        "A_A4tgLIXO4"
+      ]
+    },
+    {
+      "title": "Branching Tastes",
+      "slug": "branching-tastes",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/branching-tastes.md",
+      "summary": "Player interests become more diverse with age. Younger players form a broad 'trunk' market; older ones split into niches.",
+      "read_next": [
+        "fun-picking-sides"
+      ],
+      "source_videos": [
+        "50Khnf80P7M"
+      ]
+    },
+    {
+      "title": "That Was Then, This Is Now",
+      "slug": "that-was-then-this-is-now",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/that-was-then-this-is-now.md",
+      "summary": "Each era has merits; modern games are more polished but older ones often innovated more. Encourage trying new games.",
+      "read_next": [
+        "the-fiends-cauldron",
+        "a-small-window-into-the-world"
+      ],
+      "source_videos": [
+        "CVQ4PuihnTk"
+      ]
+    },
+    {
+      "title": "Game Opening",
+      "slug": "game-opening",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/game-opening.md",
+      "summary": "Your game must hook players within the first 3 minutes. Skip lengthy intros; jump into core gameplay immediately.",
+      "read_next": [
+        "be-mindful-of-the-time-players-are-giving-you"
+      ],
+      "source_videos": [
+        "E4ZUgPoDrvY"
+      ]
+    },
+    {
+      "title": "Just Let Them Play",
+      "slug": "just-let-them-play",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/just-let-them-play.md",
+      "summary": "Game should show core fun within first 3 minutes; avoid lengthy prologues; let players play immediately.",
+      "read_next": [
+        "squeeze-and-release"
+      ],
+      "source_videos": [
+        "PlbwQ_rntCM"
+      ]
+    },
+    {
+      "title": "High Difficulty and Roguelike Appeal",
+      "slug": "high-difficulty-appeal",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/high-difficulty-appeal.md",
+      "summary": "High difficulty games thrive because players want to see what comes next. Simply copying difficulty without strong motivation leads to frustration.",
+      "read_next": [
+        "kid-icarus-rising"
+      ],
+      "source_videos": [
+        "atHnu2fKtZA"
+      ]
+    },
+    {
+      "title": "Fuel Motivation with Anticipation",
+      "slug": "difficulty-motivation",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/difficulty-motivation.md",
+      "summary": "High difficulty is acceptable if players have a strong desire to see what comes next.",
+      "read_next": [
+        "be-mindful-of-the-time-players-are-giving-you"
+      ],
+      "source_videos": [
+        "6sbJdEGZA-o"
+      ]
+    },
+    {
+      "title": "Being Kind to Beginners",
+      "slug": "being-kind-to-beginners",
+      "category_slug": "player-experience",
+      "path": "categories/player-experience/being-kind-to-beginners.md",
+      "summary": "When facing a clearly new player, tone down your skill level to give them a fun experience. Design your game to ease beginners in naturally.",
+      "read_next": [
+        "be-mindful-of-the-time-players-are-giving-you"
+      ],
+      "source_videos": [
+        "R7rd4-ua2AI"
+      ]
+    },
+    {
+      "title": "Handling Development Setbacks",
+      "slug": "handling-development-setbacks",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/handling-development-setbacks.md",
+      "summary": "Game cancellations and delays happen. Sakurai emphasizes learning from failure, knowing when to cut losses, and maintaining team morale.",
+      "read_next": [
+        "role-of-the-director",
+        "team-building-and-communication"
+      ],
+      "source_videos": [
+        "K2G-MOEDlxk"
+      ]
+    },
+    {
+      "title": "Role of the Director",
+      "slug": "role-of-the-director",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/role-of-the-director.md",
+      "summary": "Sakurai describes his role in Smash Bros: providing vision, solving key design hurdles, and personally playtesting. A director must be hands-on and make final decisions.",
+      "read_next": [
+        "handling-development-setbacks",
+        "team-building-and-communication"
+      ],
+      "source_videos": [
+        "ctu2bQfuSPk",
+        "mQ00_aOCvX4"
+      ]
+    },
+    {
+      "title": "Team Building and Communication",
+      "slug": "team-building-and-communication",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/team-building-and-communication.md",
+      "summary": "Sakurai shares how he assembled the Smash Bros X team from external companies. Good communication and respect are key.",
+      "read_next": [
+        "role-of-the-director",
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "mQ00_aOCvX4"
+      ]
+    },
+    {
+      "title": "Making Your Game Easy to Tune",
+      "slug": "making-your-game-easy-to-tune",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/making-your-game-easy-to-tune.md",
+      "summary": "Parameter externalization: store all tunable numbers in Excel, use formulas for relationships, hide seldom-changed values, automate conversion.",
+      "read_next": [
+        "distinguishing-between-major-and-minor-elements",
+        "let-your-characters-shine"
+      ],
+      "source_videos": [
+        "nGaajB8m5Q0"
+      ]
+    },
+    {
+      "title": "Bug Testing Systems",
+      "slug": "bug-testing-systems",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/bug-testing-systems.md",
+      "summary": "Establish structured bug tracking: unified ROMs, severity ranking (S/A/B/C), assignment to specialists, regression testing. Use automated testing for large games.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "mQJEWMmZutA"
+      ]
+    },
+    {
+      "title": "Debug Mode",
+      "slug": "debug-mode",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/debug-mode.md",
+      "summary": "Implement a debug mode early with features like invincibility, camera control, stat adjustment. Use a single controller for all debug functions.",
+      "read_next": [
+        "animation-blending"
+      ],
+      "source_videos": [
+        "AdBcCQtuATc"
+      ]
+    },
+    {
+      "title": "Storage and Cable Management",
+      "slug": "storage-cable-management",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/storage-cable-management.md",
+      "summary": "Organize game collections and development hardware with custom cabinets, cable management, and label printers.",
+      "read_next": [
+        "bug-testing-systems"
+      ],
+      "source_videos": [
+        "3tpttuaYiPI"
+      ]
+    },
+    {
+      "title": "Transparency Features",
+      "slug": "transparency-features",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/transparency-features.md",
+      "summary": "Development tools that allow making parts of a character model transparent to better see animations. Useful for debugging and clean screenshots.",
+      "read_next": [
+        "always-keep-attack-collision-in-mind"
+      ],
+      "source_videos": [
+        "Ie5wG3LlBNs"
+      ]
+    },
+    {
+      "title": "Naming Conventions",
+      "slug": "naming-conventions",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/naming-conventions.md",
+      "summary": "Use consistent, English-friendly naming to avoid confusion between development terms and player-facing names.",
+      "read_next": [
+        "parameter-externalization"
+      ],
+      "source_videos": [
+        "dyqKV_oZFMo"
+      ]
+    },
+    {
+      "title": "Parameter Externalization",
+      "slug": "parameter-externalization",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/parameter-externalization.md",
+      "summary": "Store tunable numbers in external files like Excel, not hard-coded, to allow quick iteration without recompiling.",
+      "read_next": [
+        "ticket-system"
+      ],
+      "source_videos": [
+        "dyqKV_oZFMo"
+      ]
+    },
+    {
+      "title": "Ticket System",
+      "slug": "ticket-system",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/ticket-system.md",
+      "summary": "Use a ticket system to manage all tasks so that every job has an owner and status, preventing tasks from falling through the cracks.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "dyqKV_oZFMo"
+      ]
+    },
+    {
+      "title": "Frame Rates",
+      "slug": "frame-rates",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/frame-rates.md",
+      "summary": "Frame rate is the basic unit of game time, usually 60fps standard. 30fps common but 60fps smoother. NTSC/PAL differences affect speed; variable frame rate can maintain consistency.",
+      "read_next": [
+        "stop-for-big-moments"
+      ],
+      "source_videos": [
+        "Rjdmi7628GM"
+      ]
+    },
+    {
+      "title": "Units of Speed",
+      "slug": "units-of-speed",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/units-of-speed.md",
+      "summary": "Speed in games is defined by distance/time units. In 2D pixel games, dots/frame; in 3D, real-world units like km/h but scaled with character size.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "_B0cpF8fQ4s"
+      ]
+    },
+    {
+      "title": "Learn to Count Frames!",
+      "slug": "learn-count-frames",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/learn-count-frames.md",
+      "summary": "Understanding frame length is crucial for timing game actions. With 60fps, counting '1 and 2 and 3' approximates 30 frames.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "JZ1Jd0u3b6U"
+      ]
+    },
+    {
+      "title": "Put Parameters in Brackets",
+      "slug": "put-parameters-in-brackets",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/put-parameters-in-brackets.md",
+      "summary": "Distinguish between program logic and adjustable parameters. Use brackets in specs to denote parameter names and circles to mark values needing tuning. Store in separate files.",
+      "read_next": [
+        "learn-count-frames"
+      ],
+      "source_videos": [
+        "v6ozfbqNa54"
+      ]
+    },
+    {
+      "title": "Name Files Logically",
+      "slug": "name-files-logically",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/name-files-logically.md",
+      "summary": "Use consistent naming conventions: 'Attack' for normal moves, 'Special' for specials, direction codes (N, S, L), strength numbers. Use English.",
+      "read_next": [
+        "spec-changes"
+      ],
+      "source_videos": [
+        "XMzR5mJHPDg"
+      ]
+    },
+    {
+      "title": "Staying Organized with Hierarchical Outlines",
+      "slug": "staying-organized-with-hierarchical-outlines",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/staying-organized-with-hierarchical-outlines.md",
+      "summary": "Use outline view to structure ideas hierarchically, ideal for personal planning.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "ZzCfzwe23kw"
+      ]
+    },
+    {
+      "title": "Creative Solutions Under Hardware Constraints",
+      "slug": "working-under-constraints",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/working-under-constraints.md",
+      "summary": "Tight memory and processing limits force elegant design. Example: Kirby's 512KB used symmetric graphics and pre-programmed enemy paths.",
+      "read_next": [
+        "handling-development-setbacks"
+      ],
+      "source_videos": [
+        "0Fuo0S3g-XY"
+      ]
+    },
+    {
+      "title": "Kirby Development Secrets",
+      "slug": "kirby-development-secrets",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/kirby-development-secrets.md",
+      "summary": "How original Kirby was made with extreme ROM constraints: mirrored sprites, no terrain collision for enemies, prototype designs already matching final.",
+      "read_next": [
+        "mushi-king-dev"
+      ],
+      "source_videos": [
+        "ZUY2AtBD6Sk"
+      ]
+    },
+    {
+      "title": "Mushi King Development",
+      "slug": "mushi-king-dev",
+      "category_slug": "development-insights",
+      "path": "categories/development-insights/mushi-king-dev.md",
+      "summary": "A small-team LSI game featuring beetle raising and battling. Balance growth phases, hidden specs add depth, watch for platform speed differences.",
+      "read_next": [
+        "kirby-development-secrets"
+      ],
+      "source_videos": [
+        "b3Fd8pBK0EA"
+      ]
+    },
+    {
+      "title": "Up is Down, Down is Up",
+      "slug": "up-is-down",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/up-is-down.md",
+      "summary": "As a director or lead, you are not above the team; you are requesting their help. Treat everyone with respect and speak politely.",
+      "read_next": [
+        "director-as-trimmer"
+      ],
+      "source_videos": [
+        "r8ZZlnvNvBY"
+      ]
+    },
+    {
+      "title": "Director as Trimmer",
+      "slug": "director-as-trimmer",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/director-as-trimmer.md",
+      "summary": "A director's job includes cutting unnecessary or overly risky tasks to keep the project on track.",
+      "read_next": [
+        "early-trouble-reporting"
+      ],
+      "source_videos": [
+        "MS2Tf3nXhZE"
+      ]
+    },
+    {
+      "title": "Early Trouble Reporting",
+      "slug": "early-trouble-reporting",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/early-trouble-reporting.md",
+      "summary": "Encourage team members to report problems as early as possible, so director can adjust the plan.",
+      "read_next": [
+        "director-as-trimmer"
+      ],
+      "source_videos": [
+        "MS2Tf3nXhZE"
+      ]
+    },
+    {
+      "title": "Lessons from Mr. Iwata",
+      "slug": "mr-iwata-lessons",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/mr-iwata-lessons.md",
+      "summary": "Satoru Iwata's leadership: hands-on problem-solving, open communication, service-oriented spirit.",
+      "read_next": [
+        "up-is-down"
+      ],
+      "source_videos": [
+        "o2wYKkqhkG0"
+      ]
+    },
+    {
+      "title": "Supervision Workflow",
+      "slug": "supervision-workflow",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/supervision-workflow.md",
+      "summary": "Handle supervision requests via email processed in order of arrival, replying same day. Set aside 'no supervision' periods for focused work.",
+      "read_next": [
+        "decision-making-principles",
+        "debug-ticket-system"
+      ],
+      "source_videos": [
+        "dZ0NgG-h_uQ"
+      ]
+    },
+    {
+      "title": "Decision-Making Principles",
+      "slug": "decision-making-principles",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/decision-making-principles.md",
+      "summary": "In meetings, make decisions immediately. Avoid postponing conclusions even if imperfect; course-correct later if needed.",
+      "read_next": [
+        "role-of-director-vs-producer"
+      ],
+      "source_videos": [
+        "dZ0NgG-h_uQ"
+      ]
+    },
+    {
+      "title": "Debug Ticket System",
+      "slug": "debug-ticket-system",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/debug-ticket-system.md",
+      "summary": "Manage bugs with ticket system: severity ranking (S/A/B/C), assign to developers, verify fix, archive. Use unified ROM version for testing.",
+      "read_next": [
+        "supervision-workflow"
+      ],
+      "source_videos": [
+        "dZ0NgG-h_uQ"
+      ]
+    },
+    {
+      "title": "Role of Director vs Producer",
+      "slug": "role-of-director-vs-producer",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/role-of-director-vs-producer.md",
+      "summary": "Director owns game content and has final say on creative. Producer handles budget, schedule, team management, external relations.",
+      "read_next": [
+        "decision-making-principles"
+      ],
+      "source_videos": [
+        "dZ0NgG-h_uQ"
+      ]
+    },
+    {
+      "title": "Finish Everything Within the Day",
+      "slug": "finish-everything-within-the-day",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/finish-everything-within-the-day.md",
+      "summary": "Manage review requests via email, process in arrival order, reply same day. Dedicate no-review time for personal work.",
+      "read_next": [
+        "how-multiple-people-work-on-one-file"
+      ],
+      "source_videos": [
+        "j1qLM0yfOuY"
+      ]
+    },
+    {
+      "title": "How Multiple People Work on One File",
+      "slug": "how-multiple-people-work-on-one-file",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/how-multiple-people-work-on-one-file.md",
+      "summary": "Files stored on server with lock/edit/unlock. Large files cause bottlenecks. Merge conflicts may require manual resolution; ancestor regression can occur.",
+      "read_next": [
+        "finish-everything-within-the-day"
+      ],
+      "source_videos": [
+        "s5u7VqDl-1I"
+      ]
+    },
+    {
+      "title": "Sharing Info Within a Team",
+      "slug": "sharing-info-within-a-team",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/sharing-info-within-a-team.md",
+      "summary": "Three methods: daily dev log (with comments), daily screenshot, periodic project showcase presentations.",
+      "read_next": [
+        "writing-game-proposals"
+      ],
+      "source_videos": [
+        "40ryMOr36fw"
+      ]
+    },
+    {
+      "title": "Explain Ideas to Everyone at Once",
+      "slug": "explain-ideas-everyone",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/explain-ideas-everyone.md",
+      "summary": "All team members relevant to a feature gather for a single explanation session, reducing misinterpretation.",
+      "read_next": [
+        "dont-rely-plan-b"
+      ],
+      "source_videos": [
+        "CafmzxRBo4Y"
+      ]
+    },
+    {
+      "title": "Don't Rely on a 'Plan B'",
+      "slug": "dont-rely-plan-b",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/dont-rely-plan-b.md",
+      "summary": "In design documents, propose the single best solution you've arrived at, then refine through team feedback.",
+      "read_next": [
+        "explain-ideas-everyone"
+      ],
+      "source_videos": [
+        "QgkLrqGrwy4"
+      ]
+    },
+    {
+      "title": "Canceled Games",
+      "slug": "canceled-games",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/canceled-games.md",
+      "summary": "Project cancellation happens. Developers should be aware of business pressures and contribute beyond assigned tasks to help project succeed.",
+      "read_next": [
+        "explain-ideas-everyone"
+      ],
+      "source_videos": [
+        "5Ob9OA0peQY"
+      ]
+    },
+    {
+      "title": "Spec Changes",
+      "slug": "spec-changes",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/spec-changes.md",
+      "summary": "Avoid spec changes when possible, but be flexible; when you find a problem, report immediately and decide quickly with full information.",
+      "read_next": [
+        "name-files-logically"
+      ],
+      "source_videos": [
+        "bzWibA7izF8"
+      ]
+    },
+    {
+      "title": "Decide on the Spot",
+      "slug": "decide-on-the-spot",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/decide-on-the-spot.md",
+      "summary": "Don't postpone decisions. In meetings, urge decision-makers to decide immediately unless key person absent.",
+      "read_next": [
+        "stay-true-to-concept"
+      ],
+      "source_videos": [
+        "NaWuNgpYDi4"
+      ]
+    },
+    {
+      "title": "Stay True to Your Concept",
+      "slug": "stay-true-to-concept",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/stay-true-to-concept.md",
+      "summary": "The original concept is a beacon. Long development can blur focus, but never abandon core vision. Changing direction mid-dev wastes resources.",
+      "read_next": [
+        "specification-changes"
+      ],
+      "source_videos": [
+        "2LvPC7bIywM"
+      ]
+    },
+    {
+      "title": "Specification Changes",
+      "slug": "specification-changes",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/specification-changes.md",
+      "summary": "Avoid unnecessary spec changes. When needed, weigh pros and cons quickly. Communicate impacts to team.",
+      "read_next": [
+        "decide-on-the-spot"
+      ],
+      "source_videos": [
+        "ZTK6RJWQd6k"
+      ]
+    },
+    {
+      "title": "Ten People Can Produce Seven People's Work",
+      "slug": "ten-people-can-produce-seven-peoples-work",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/ten-people-can-produce-seven-peoples-work.md",
+      "summary": "A 10-person team typically produces only 7 people's work due to management overhead. Experienced members transitioning to leadership reduce personal output but improve team efficiency.",
+      "read_next": [
+        "mastering-up"
+      ],
+      "source_videos": [
+        "1-iZFmenARA"
+      ]
+    },
+    {
+      "title": "Mastering Up",
+      "slug": "mastering-up",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/mastering-up.md",
+      "summary": "Master Up is the final delivery milestone. It's not always celebratory; often involves tough compromises. Acknowledge effort and accept imperfections.",
+      "read_next": [
+        "marketing-is-multiplicative"
+      ],
+      "source_videos": [
+        "y2Webks5iTs"
+      ]
+    },
+    {
+      "title": "The Story of Sora Ltd.",
+      "slug": "sora-ltd",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/sora-ltd.md",
+      "summary": "Sora Ltd. is Sakurai's personal company for contracting. No employees, no hiring, does not accept resumes. Business model: no advance payment, only revenue share.",
+      "read_next": [
+        "up-is-down"
+      ],
+      "source_videos": [
+        "VVhGCtCNGHg"
+      ]
+    },
+    {
+      "title": "Company-Supported Game Development",
+      "slug": "company-game-development",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/company-game-development.md",
+      "summary": "Working within a company provides stable salary, shared risk, and support. Recognize the value of organizational infrastructure.",
+      "read_next": [
+        "majority-should-not-rule"
+      ],
+      "source_videos": [
+        "fiCLKUQtKg0"
+      ]
+    },
+    {
+      "title": "Majority Should Not Rule",
+      "slug": "majority-should-not-rule",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/majority-should-not-rule.md",
+      "summary": "In creative decisions, majority voting tends to produce safe, mediocre results. A well-informed director should make final calls.",
+      "read_next": [
+        "company-game-development"
+      ],
+      "source_videos": [
+        "dP94K69NSVc"
+      ]
+    },
+    {
+      "title": "Directors and Producers",
+      "slug": "directors-and-producers",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/directors-and-producers.md",
+      "summary": "Director oversees content decisions; producer manages team, budget, schedule, marketing. Both must collaborate.",
+      "read_next": [
+        "up-is-down"
+      ],
+      "source_videos": [
+        "isEMP5_Eems"
+      ]
+    },
+    {
+      "title": "Don't Wait to Speak Your Mind",
+      "slug": "dont-wait-to-speak",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/dont-wait-to-speak.md",
+      "summary": "Express dissatisfaction or improvement ideas immediately within the team, not after completion. Pair criticism with solution. Establish 'Opinion Officer' role.",
+      "read_next": [
+        "jobs-in-game-development"
+      ],
+      "source_videos": [
+        "f3UjN6cCBYY"
+      ]
+    },
+    {
+      "title": "Jobs in Game Development",
+      "slug": "jobs-in-game-development",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/jobs-in-game-development.md",
+      "summary": "Overview of typical roles: Director, Planner, Programmer, Model Artist, Artwork, Motion, Effect, Sound, UI, Technical Supporter, Manager, Monitor, Debugger.",
+      "read_next": [
+        "dont-wait-to-speak"
+      ],
+      "source_videos": [
+        "Hk2npGxEQRo"
+      ]
+    },
+    {
+      "title": "Sora's Work-From-Home Strategies",
+      "slug": "sora-work-from-home",
+      "category_slug": "team-workflow",
+      "path": "categories/team-workflow/sora-work-from-home.md",
+      "summary": "When Smash Ultimate switched to remote work, issues included poor desks, slow internet. Solution: give each employee budget to choose own equipment. Expect 30% productivity drop.",
+      "read_next": [
+        "hardship-game-endure"
+      ],
+      "source_videos": [
+        "YXudgEHF78M"
+      ]
+    },
+    {
+      "title": "Make Games Because You're Good At It",
+      "slug": "make-games-because-youre-good-at-it",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/make-games-because-youre-good-at-it.md",
+      "summary": "Make games because you're good at it, not just because you love them. Work is work; be reliable, respect constraints, focus on delivering a great player experience.",
+      "read_next": [
+        "just-do-it-already"
+      ],
+      "source_videos": [
+        "ZTK6RJWQd6k"
+      ]
+    },
+    {
+      "title": "Just Do It Already!",
+      "slug": "just-do-it-already",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/just-do-it-already.md",
+      "summary": "The hardest part is starting. Overcome procrastination by immediate action. Motivation follows action.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "ZTK6RJWQd6k"
+      ]
+    },
+    {
+      "title": "Broad Input, Broad Output for Creatives",
+      "slug": "broad-input-output",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/broad-input-output.md",
+      "summary": "To improve work quality, intentionally broaden input (play games, watch films, read) and output (write, share, speak). Make it a daily habit.",
+      "read_next": [
+        "color-coding-ui"
+      ],
+      "source_videos": [
+        "VGsxpvJ4IfM"
+      ]
+    },
+    {
+      "title": "Keep Your Internal Pressure High",
+      "slug": "keep-your-internal-pressure-high",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/keep-your-internal-pressure-high.md",
+      "summary": "Keep early ideas secret to build creative pressure, leading to more passionate and refined outputs.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "UVnLW47cpFk"
+      ]
+    },
+    {
+      "title": "The Power of Suggestion",
+      "slug": "the-power-of-suggestion",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/the-power-of-suggestion.md",
+      "summary": "Imagine a terrifying object chasing you to trigger flight response; set tight deadlines to boost efficiency. Running away from deadlines works better than chasing goals.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "QI39AHhZNcY"
+      ]
+    },
+    {
+      "title": "Competition and Abundance in Game Development",
+      "slug": "competition-and-abundance",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/competition-and-abundance.md",
+      "summary": "The game industry is fiercely competitive, yet abundant with opportunities. Developers should persist, and players should appreciate the effort.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "fWWwELXIAEw"
+      ]
+    },
+    {
+      "title": "Never Get Into Fights",
+      "slug": "never-get-into-fights",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/never-get-into-fights.md",
+      "summary": "The game industry is small; burned bridges will come back. Avoid arguments, gossip, and leaving on bad terms.",
+      "read_next": [
+        "elementary-school-play-testers"
+      ],
+      "source_videos": [
+        "8kgrvdeLBR8"
+      ]
+    },
+    {
+      "title": "Elementary School Play Testers",
+      "slug": "elementary-school-play-testers",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/elementary-school-play-testers.md",
+      "summary": "Invite children to playtest early builds for unfiltered feedback on engagement, difficulty, and fun.",
+      "read_next": [
+        "being-kind-to-beginners"
+      ],
+      "source_videos": [
+        "aACUZ769djE"
+      ]
+    },
+    {
+      "title": "Column Persistence",
+      "slug": "column-persistence",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/column-persistence.md",
+      "summary": "How Sakurai maintained a weekly column for 18+ years: output easily, limit time per session, keep it light without over-commitment.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "ff7HadWHTJo"
+      ]
+    },
+    {
+      "title": "Try Telling That to the Player",
+      "slug": "try-telling-that-to-the-player",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/try-telling-that-to-the-player.md",
+      "summary": "Develop with player as priority; don't sacrifice player experience for development convenience.",
+      "read_next": [
+        "game-development-isnt-a-game"
+      ],
+      "source_videos": [
+        "Ik3deWOVCHI"
+      ]
+    },
+    {
+      "title": "Game Development Isn't a Game",
+      "slug": "game-development-isnt-a-game",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/game-development-isnt-a-game.md",
+      "summary": "Game development is professional work; even if you don't like it, complete it with player happiness as goal.",
+      "read_next": [
+        "presentations-are-all-about-speed"
+      ],
+      "source_videos": [
+        "jlFkxfkICO8"
+      ]
+    },
+    {
+      "title": "Presentations Are All About Speed",
+      "slug": "presentations-are-all-about-speed",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/presentations-are-all-about-speed.md",
+      "summary": "Demos and pitches must be fast and dense. Cut all fluff. Show the game early, summarize quickly.",
+      "read_next": [
+        "try-telling-that-to-the-player"
+      ],
+      "source_videos": [
+        "nkNSNGJvFXk"
+      ]
+    },
+    {
+      "title": "You'll Forget the Hardship, But the Game Will Endure!",
+      "slug": "hardship-game-endure",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/hardship-game-endure.md",
+      "summary": "Game development is hard, but the pain fades while the game remains. Remember that millions may play your game.",
+      "read_next": [
+        "directors-need-unique"
+      ],
+      "source_videos": [
+        "MPSFfqxpVJk"
+      ]
+    },
+    {
+      "title": "Directors Need to Be Unique",
+      "slug": "directors-need-unique",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/directors-need-unique.md",
+      "summary": "Great game directors share a trait: they notice nuances others miss and think differently. Cultivate your own perspective.",
+      "read_next": [
+        "hardship-game-endure"
+      ],
+      "source_videos": [
+        "WXBS7hk0B7k"
+      ]
+    },
+    {
+      "title": "Creators Change, Too",
+      "slug": "creators-change-too",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/creators-change-too.md",
+      "summary": "Developers may leave the game industry but find success elsewhere. Don't assume they've failed; change is natural.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "pb4MCvedyOg"
+      ]
+    },
+    {
+      "title": "The Power of Words",
+      "slug": "the-power-of-words",
+      "category_slug": "work-ethic-mindset",
+      "path": "categories/work-ethic-mindset/the-power-of-words.md",
+      "summary": "Spoken words shape reality through influence on mindset and actions. Avoid negative talk; channel negativity into improvement.",
+      "read_next": [
+        "make-games-because-youre-good-at-it"
+      ],
+      "source_videos": [
+        "sbEFYooj0Y8"
+      ]
+    },
+    {
+      "title": "Treat Marketing as Essential",
+      "slug": "treat-marketing-as-essential",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/treat-marketing-as-essential.md",
+      "summary": "A great game must also be well-known; invest equally in development and promotion.",
+      "read_next": [
+        "ensure-product-image-matches-reality"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Ensure Product Image Matches Reality",
+      "slug": "ensure-product-image-matches-reality",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/ensure-product-image-matches-reality.md",
+      "summary": "Never mislead consumers; trailers and screenshots must accurately represent the final game.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Use Demos Judiciously",
+      "slug": "use-demos-judiciously",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/use-demos-judiciously.md",
+      "summary": "Demos can be effective but require significant effort and may spoil experience if not well-crafted.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Create Shareable Character Reveal Videos",
+      "slug": "create-shareable-character-reveal-videos",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/create-shareable-character-reveal-videos.md",
+      "summary": "Design reveal trailers that are exciting, self-contained, and shareable without context from the main game.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Produce Trailers Step-by-Step",
+      "slug": "produce-trailers-step-by-step",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/produce-trailers-step-by-step.md",
+      "summary": "Trailer creation involves multiple iterations: storyboard, animation, CG, sound, and frequent reviews.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Show Gameplay First in Trailers",
+      "slug": "show-gameplay-first-in-trailers",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/show-gameplay-first-in-trailers.md",
+      "summary": "Begin trailers with actual game footage rather than logos or cinematic intros.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "sI39RMvlQT0"
+      ]
+    },
+    {
+      "title": "Official Websites",
+      "slug": "official-websites",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/official-websites.md",
+      "summary": "Websites remain vital for deep, centralized information; earlier used to correct bias (e.g., Smash Bros.).",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "ABow3YMNg1Q"
+      ]
+    },
+    {
+      "title": "Smash Bros. DOJO!!",
+      "slug": "smash-bros-doj",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/smash-bros-doj.md",
+      "summary": "The Smash Bros. DOJO website started as a manual to explain the game's unique appeal, later evolved into official daily-updated news site. Key: consistent, developer-driven updates.",
+      "read_next": [
+        "never-get-into-fights"
+      ],
+      "source_videos": [
+        "v4BG0wnc72s"
+      ]
+    },
+    {
+      "title": "Beyond Market Analysis",
+      "slug": "beyond-market-analysis",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/beyond-market-analysis.md",
+      "summary": "Market analysis relies on past data and cannot predict future hits. Sakurai advises a skeptical stance: use for reference, not as compass for innovation.",
+      "read_next": [
+        "sustaining-information-flow"
+      ],
+      "source_videos": [
+        "aapNzQq4yyo"
+      ]
+    },
+    {
+      "title": "Sustaining Information Flow",
+      "slug": "sustaining-information-flow",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/sustaining-information-flow.md",
+      "summary": "The 'Smash Bros Ticket' website kept fans engaged with daily updates. Continuous, fresh information builds loyal audience.",
+      "read_next": [
+        "beyond-market-analysis",
+        "role-of-the-director"
+      ],
+      "source_videos": [
+        "aapNzQq4yyo"
+      ]
+    },
+    {
+      "title": "Marketing is Multiplicative",
+      "slug": "marketing-is-multiplicative",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/marketing-is-multiplicative.md",
+      "summary": "Development and marketing are like two wheels; both must work for success. Marketing multiplies the value of development.",
+      "read_next": [
+        "ten-people-can-produce-seven-peoples-work"
+      ],
+      "source_videos": [
+        "iwOgFiJNCoU"
+      ]
+    },
+    {
+      "title": "Making and Releasing Game Demos",
+      "slug": "game-demos",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/game-demos.md",
+      "summary": "Demos are effective marketing but costly: require separate builds, version management, risk spoiler leaks. Evaluate resources.",
+      "read_next": [
+        "high-difficulty-appeal"
+      ],
+      "source_videos": [
+        "PfNtg0tSGDY"
+      ]
+    },
+    {
+      "title": "Making a Living Making Games",
+      "slug": "making-a-living-making-games",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/making-a-living-making-games.md",
+      "summary": "The most direct path into the game industry is to make your own games, starting with clones and iterating based on feedback.",
+      "read_next": [
+        "super-smash-bros"
+      ],
+      "source_videos": [
+        "_-WyivvfibM"
+      ]
+    },
+    {
+      "title": "Crafting Games Similar to Existing Ones",
+      "slug": "crafting-similar-games",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/crafting-similar-games.md",
+      "summary": "It's common to make games inspired by existing titles, but you must offer unique appeal that the original doesn't have.",
+      "read_next": [
+        "work-simulation-games"
+      ],
+      "source_videos": [
+        "BO_q72ug1eA"
+      ]
+    },
+    {
+      "title": "Avoiding Comparison in Pitches",
+      "slug": "avoiding-comparison-in-pitches",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/avoiding-comparison-in-pitches.md",
+      "summary": "When presenting a new game idea, avoid describing it as 'like [existing game]'. Focus on unique value proposition.",
+      "read_next": [
+        "making-sequels"
+      ],
+      "source_videos": [
+        "gYuvggptkDM"
+      ]
+    },
+    {
+      "title": "Making Sequels",
+      "slug": "making-sequels",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/making-sequels.md",
+      "summary": "Sequels can leverage existing systems but must deliver noticeable improvement over the original to overcome likely sales drop (often 50%).",
+      "read_next": [
+        "all-stars-return-project"
+      ],
+      "source_videos": [
+        "plPR6-Gqemc"
+      ]
+    },
+    {
+      "title": "All Stars Return Project",
+      "slug": "all-stars-return-project",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/all-stars-return-project.md",
+      "summary": "Super Smash Bros. Ultimate's core concept: bring back every previous character. Clear vision and managing constraints.",
+      "read_next": [
+        "making-sequels"
+      ],
+      "source_videos": [
+        "RDrNWAHaKfI"
+      ]
+    },
+    {
+      "title": "The Price of Games",
+      "slug": "the-price-of-games",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/the-price-of-games.md",
+      "summary": "Games are cheap relative to other entertainment; support developers by buying games directly or playing them via subscription.",
+      "read_next": [
+        "keeping-rewards-in-sight"
+      ],
+      "source_videos": [
+        "i6jKMAU3aJ8"
+      ]
+    },
+    {
+      "title": "Fun Beyond Game Essence",
+      "slug": "fun-beyond-game-essence",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/fun-beyond-game-essence.md",
+      "summary": "Game fun comes from many sources: operation feel, story, fandom, simulation, creativity, rhythm. Designers should blend these.",
+      "read_next": [
+        "keeping-rewards-in-sight"
+      ],
+      "source_videos": [
+        "Dq7X8-lB0is"
+      ]
+    },
+    {
+      "title": "Prep Your Proposals Hot and Fast",
+      "slug": "prep-your-proposals-hot-fast",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/prep-your-proposals-hot-fast.md",
+      "summary": "Game proposals should be written quickly and concisely while enthusiasm is high. Focus on fun, not lengthy explanations.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "1cFrEoiziDA"
+      ]
+    },
+    {
+      "title": "Writing Game Proposals",
+      "slug": "writing-game-proposals",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/writing-game-proposals.md",
+      "summary": "Proposal style: each slide has one image and one sentence; can be long (200+ pages) but easy to flip through like a comic. Include categories and progress indicators.",
+      "read_next": [
+        "sharing-info-within-a-team"
+      ],
+      "source_videos": [
+        "2Iiu1k16Ukc"
+      ]
+    },
+    {
+      "title": "Effective Presentation",
+      "slug": "effective-presentation",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/effective-presentation.md",
+      "summary": "Demos and pitches must be fast and dense. Cut all fluff. Show the game early, summarize quickly, let gameplay speak.",
+      "read_next": [
+        "proposal-writing"
+      ],
+      "source_videos": [
+        "ZTK6RJWQd6k"
+      ]
+    },
+    {
+      "title": "Proposal Writing",
+      "slug": "proposal-writing",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/proposal-writing.md",
+      "summary": "Write proposals with one idea per page. Use one image and max two lines of text. Many pages fine as long as each clear.",
+      "read_next": [
+        "effective-presentation"
+      ],
+      "source_videos": [
+        "ZTK6RJWQd6k"
+      ]
+    },
+    {
+      "title": "Sound Feedback",
+      "slug": "sound-feedback",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/sound-feedback.md",
+      "summary": "When giving sound effect feedback, be specific: 'more attack', 'higher pitch'. Reference known sounds. Vague onomatopoeia like 'gaki' doesn't help.",
+      "read_next": [
+        "treat-marketing-as-essential"
+      ],
+      "source_videos": [
+        "B9CokyQ2Tes"
+      ]
+    },
+    {
+      "title": "Show Actual Gameplay",
+      "slug": "show-gameplay",
+      "category_slug": "marketing-communication",
+      "path": "categories/marketing-communication/show-gameplay.md",
+      "summary": "Marketing material must show actual gameplay footage early. Avoid long logos, trailers, or intros.",
+      "read_next": [
+        "effective-presentation"
+      ],
+      "source_videos": [
+        "-4oPgNbnJCI"
+      ]
+    },
+    {
+      "title": "Knockback in Super Smash Bros.",
+      "slug": "knockback-in-super-smash-bros",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/knockback-in-super-smash-bros.md",
+      "summary": "Detailed parameters (vector, reaction values) allow precise knockback control for unique victory conditions.",
+      "read_next": [
+        "unexpected-results"
+      ],
+      "source_videos": [
+        "HVktK4a9Yfo"
+      ]
+    },
+    {
+      "title": "Unexpected Results",
+      "slug": "unexpected-results",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/unexpected-results.md",
+      "summary": "Optimization can alter game balance. Online updates help, but offline testing is crucial.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "6P8zwwQ9OhU"
+      ]
+    },
+    {
+      "title": "Online Updates",
+      "slug": "online-updates",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/online-updates.md",
+      "summary": "Modern games are complex; bugs and balance issues are inevitable. Online updates are necessary but should not crutch—first impressions matter.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "e89D_CG9P0g"
+      ]
+    },
+    {
+      "title": "Minimize Display Latency",
+      "slug": "minimize-display-latency",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/minimize-display-latency.md",
+      "summary": "Ensure your game responds instantly; help players reduce display lag through settings.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "TOkKlFOkYjk"
+      ]
+    },
+    {
+      "title": "Manage Remote Work Productivity",
+      "slug": "manage-remote-work-productivity",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/manage-remote-work-productivity.md",
+      "summary": "Remote development can reduce efficiency; mitigate with proper equipment and processes.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "TOkKlFOkYjk"
+      ]
+    },
+    {
+      "title": "Set Up a Lean Company Structure",
+      "slug": "set-up-a-lean-company-structure",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/set-up-a-lean-company-structure.md",
+      "summary": "Small, flexible entities (like a yūgen gaisha) can work well for freelance developers.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "TOkKlFOkYjk"
+      ]
+    },
+    {
+      "title": "Plan Budgets Realistically",
+      "slug": "plan-budgets-realistically",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/plan-budgets-realistically.md",
+      "summary": "Be aware of all costs: development, marketing, localization, and hidden expenses.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "_qPqBilhEtI"
+      ]
+    },
+    {
+      "title": "Organize Content with Numbering",
+      "slug": "organize-content-with-numbering",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/organize-content-with-numbering.md",
+      "summary": "Use systematic file naming and folder structures to manage large volumes of assets.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "_qPqBilhEtI"
+      ]
+    },
+    {
+      "title": "CRT Displays",
+      "slug": "crt-displays",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/crt-displays.md",
+      "summary": "CRT monitors have unique properties: fast response, vibrant colors, interlaced scanning, visible scanlines. Understanding these helps in designing for retro or retro-styled games.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "9FDDPZtWvhM"
+      ]
+    },
+    {
+      "title": "Long Ago, Numbers Were Used to Draw Pixel Art",
+      "slug": "long-ago-numbers-were-used-to-draw-pixel-art",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/long-ago-numbers-were-used-to-draw-pixel-art.md",
+      "summary": "In early microcomputers, pixel art was created by manually entering hexadecimal numbers representing 4x1 pixel patterns.",
+      "read_next": [
+        "knockback-in-super-smash-bros"
+      ],
+      "source_videos": [
+        "5pJC1YLMbhk"
+      ]
+    },
+    {
+      "title": "Family BASIC",
+      "slug": "family-basic",
+      "category_slug": "programming-tech",
+      "path": "categories/programming-tech/family-basic.md",
+      "summary": "Explores Famicom's Family BASIC peripheral, a programming environment with 2KB memory, preloaded sprites, battery backup. Author credits it for launching his career.",
+      "read_next": [
+        "voice-recording"
+      ],
+      "source_videos": [
+        "89_FhHQ5n-g"
+      ]
+    },
+    {
+      "title": "Screen Shake",
+      "slug": "screen-shake",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/screen-shake.md",
+      "summary": "Screen shake powerfully conveys impact. Tune with camera movement (3D) or post-render move (2D), apply decay and randomness.",
+      "read_next": [
+        "visual-effects-in-slow-motion"
+      ],
+      "source_videos": [
+        "2JXR7IASSog"
+      ]
+    },
+    {
+      "title": "Visual Effects in Slow Motion",
+      "slug": "visual-effects-in-slow-motion",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/visual-effects-in-slow-motion.md",
+      "summary": "Effects are often too fast to notice but greatly enhance atmosphere. Observing in slow motion reveals detail.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "353K_6kPqeE"
+      ]
+    },
+    {
+      "title": "Blade Trails",
+      "slug": "blade-trails",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/blade-trails.md",
+      "summary": "Two main methods: polygon trails (for most swings) and billboard placement (for fast, single-frame swings). Customize trail per character.",
+      "read_next": [
+        "flipped-animation"
+      ],
+      "source_videos": [
+        "X0GdWg2Q7z8"
+      ]
+    },
+    {
+      "title": "Billboard Effects",
+      "slug": "billboard-effects",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/billboard-effects.md",
+      "summary": "Billboard technique: polygons always facing camera. Used for particles, explosions, and certain objects. Variations like Y-axis billboard and pitfalls.",
+      "read_next": [
+        "animation-interpolation"
+      ],
+      "source_videos": [
+        "_o29OOOarPY"
+      ]
+    },
+    {
+      "title": "Particle Optimization",
+      "slug": "particle-optimization",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/particle-optimization.md",
+      "summary": "Optimize particle effects by shortening lifetime, increasing speed, using composite particles, offsetting emission times, avoiding overlap.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "tNRGqvCck6M"
+      ]
+    },
+    {
+      "title": "Wind Cut Techniques",
+      "slug": "wind-cut-techniques",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/wind-cut-techniques.md",
+      "summary": "Weapon trails (wind cuts) via polygonal trail meshes or billboard meshes along the path.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "tNRGqvCck6M"
+      ]
+    },
+    {
+      "title": "H: Effects 1 (Category Compilation)",
+      "slug": "h-effects-1",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/h-effects-1.md",
+      "summary": "Covers color additive effects, explosion patterns, screen shake, hitmark design, hitstop behavior, directional hit indicators. Emphasizes combining clear geometric elements with additive layers.",
+      "read_next": [
+        "the-limitations-of-particle-effects"
+      ],
+      "source_videos": [
+        "w8iJGj9n2uA"
+      ]
+    },
+    {
+      "title": "The Limitations of Particle Effects",
+      "slug": "the-limitations-of-particle-effects",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/the-limitations-of-particle-effects.md",
+      "summary": "Particle effects can strain performance; optimize by shortening lifespan, staggering spawn times, using pre-baked animation frames instead of real-time particles.",
+      "read_next": [
+        "h-effects-1"
+      ],
+      "source_videos": [
+        "jAQv4PTQvQE"
+      ]
+    },
+    {
+      "title": "Flashing Effects",
+      "slug": "flashing-effects",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/flashing-effects.md",
+      "summary": "Flashing effects enhance feel and convey state. Contrast issues with additive blending; solutions like mixing with dark colors or adding shadows.",
+      "read_next": [
+        "always-keep-attack-collision-in-mind"
+      ],
+      "source_videos": [
+        "Mmw39T_dBLI"
+      ]
+    },
+    {
+      "title": "Hit Marks: Designing Impact Effects",
+      "slug": "hit-marks",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/hit-marks.md",
+      "summary": "Hit marks must be flashy, clear contrast, appear at exact hit point, combine multiple effects, avoid obscuring characters, adjust duration based on game pace.",
+      "read_next": [
+        "squash-and-scale"
+      ],
+      "source_videos": [
+        "B-P4ysHSjCg"
+      ]
+    },
+    {
+      "title": "Making Lead-ins Instant and Impactful",
+      "slug": "making-leadins-instant-impactful",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/making-leadins-instant-impactful.md",
+      "summary": "'Kamae' (wind-up) affects responsiveness and impact. Smash Bros. favors immediate pose change on input for quick response, but too little reduces impact. Balance based on online lag.",
+      "read_next": [
+        "dont-anchor-center-point"
+      ],
+      "source_videos": [
+        "E8DKndKkHw8"
+      ]
+    },
+    {
+      "title": "Don't Anchor Your Center Point",
+      "slug": "dont-anchor-center-point",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/dont-anchor-center-point.md",
+      "summary": "Avoid locking camera focal point rigidly to player character. Adjusting Y-axis delay during jumps or shifting forward during action enhances sense of height, speed, and feedback.",
+      "read_next": [
+        "making-leadins-instant-impactful"
+      ],
+      "source_videos": [
+        "kLmd2F8LaLk"
+      ]
+    },
+    {
+      "title": "Modern Quality of Life Features",
+      "slug": "modern-quality-of-life",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/modern-quality-of-life.md",
+      "summary": "The Last of Us Part 1 offers extensive accessibility and QoL settings: visual adjustments, controller remapping, subtitle customization, combat assists, and more.",
+      "read_next": [
+        "listen-various-environments"
+      ],
+      "source_videos": [
+        "j2BX4yw8Z4Y"
+      ]
+    },
+    {
+      "title": "A Small Window Into the World",
+      "slug": "a-small-window-into-the-world",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/a-small-window-into-the-world.md",
+      "summary": "Screen view is only ~30° field of view; affects racing games especially. VR helps for direction-independent games. Design UI considering actual screen usage area.",
+      "read_next": [
+        "that-was-then-this-is-now",
+        "the-fiends-cauldron"
+      ],
+      "source_videos": [
+        "DGIJk0Uh8jU"
+      ]
+    },
+    {
+      "title": "The Fiend's Cauldron",
+      "slug": "the-fiends-cauldron",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/the-fiends-cauldron.md",
+      "summary": "Risk/reward system in Kid Icarus: Uprising where players spend currency to raise difficulty (earn more) or can lower it. Dynamic balancing prevents hard locks.",
+      "read_next": [
+        "that-was-then-this-is-now",
+        "super-smash-bros-melee"
+      ],
+      "source_videos": [
+        "ai7pBxHAcvU"
+      ]
+    },
+    {
+      "title": "The Potential of One Button",
+      "slug": "potential-of-one-button",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/potential-of-one-button.md",
+      "summary": "Single-button games can be categorized into four types: rapid fire, timing, speed press, and toggle. Match operation feel to game sense.",
+      "read_next": [
+        "let-players-cheat"
+      ],
+      "source_videos": [
+        "tafG03n89MY"
+      ]
+    },
+    {
+      "title": "Let Players Cheat the System",
+      "slug": "let-players-cheat",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/let-players-cheat.md",
+      "summary": "Players naturally seek exploits for advantage. These 'cheats' often become memorable fun. Tolerate small exploits that add emergent gameplay.",
+      "read_next": [
+        "potential-of-one-button"
+      ],
+      "source_videos": [
+        "MVsVTgJKuzU"
+      ]
+    },
+    {
+      "title": "The Pros and Cons of Leaderboards",
+      "slug": "the-pros-and-cons-of-leaderboards",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/the-pros-and-cons-of-leaderboards.md",
+      "summary": "Leaderboards give goals and matchmaking, but frustrate non-top players. Use inverted rankings (lower=better) and VIP rooms to soften blow.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "g7nC6NtTMIk"
+      ]
+    },
+    {
+      "title": "Customization Lets Your Imagination Play",
+      "slug": "customization-lets-your-imagination-play",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/customization-lets-your-imagination-play.md",
+      "summary": "Five key points: visualize effects, clear pros/cons, easy selection, quick testing, cool design. Customization itself must be fun.",
+      "read_next": [
+        "its-easier-if-they-already-know",
+        "teaching-players-how-to-play"
+      ],
+      "source_videos": [
+        "rwE-EEn3hYU"
+      ]
+    },
+    {
+      "title": "It's Easier If They Already Know",
+      "slug": "its-easier-if-they-already-know",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/its-easier-if-they-already-know.md",
+      "summary": "Leverage industry-standard controls to reduce learning curve; always allow full button remapping.",
+      "read_next": [
+        "customization-lets-your-imagination-play",
+        "teaching-players-how-to-play"
+      ],
+      "source_videos": [
+        "ANerCiyfJjo"
+      ]
+    },
+    {
+      "title": "Clarity vs. Style in UI",
+      "slug": "clarity-vs-style",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/clarity-vs-style.md",
+      "summary": "UI needs balance between clarity and style depending on game content.",
+      "read_next": [
+        "make-it-pop"
+      ],
+      "source_videos": [
+        "UjW_TTNtXEM"
+      ]
+    },
+    {
+      "title": "Text Size",
+      "slug": "text-size",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/text-size.md",
+      "summary": "Ensure text large enough for different languages, especially Japanese; consider adjustable text size options.",
+      "read_next": [
+        "emphasize-objects-with-collision"
+      ],
+      "source_videos": [
+        "W1ubngQNJpw"
+      ]
+    },
+    {
+      "title": "Handicap Systems",
+      "slug": "handicap-systems",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/handicap-systems.md",
+      "summary": "Handicaps balance skill gaps in multiplayer. In Smash Bros., intentional manual handicapping is most effective.",
+      "read_next": [
+        "risk-and-reward"
+      ],
+      "source_videos": [
+        "-aA_mjpCPMg"
+      ]
+    },
+    {
+      "title": "Making Work Games Fun",
+      "slug": "work-simulation-games",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/work-simulation-games.md",
+      "summary": "Games lacking traditional risk-reward can still be fun through realistic tasks, clear reward loops, and satisfying progression.",
+      "read_next": [
+        "risk-and-reward"
+      ],
+      "source_videos": [
+        "4SFOO23m-bI"
+      ]
+    },
+    {
+      "title": "Making the Imaginary Feel Real",
+      "slug": "making-imaginary-feel-real",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/making-imaginary-feel-real.md",
+      "summary": "Virtual worlds become believable through small details: textures suggesting weight, wear-and-tear, and subtle environmental effects.",
+      "read_next": [
+        "balancing-ambient-sounds"
+      ],
+      "source_videos": [
+        "bVEPp5n-ysE"
+      ]
+    },
+    {
+      "title": "Balancing Ambient Sounds",
+      "slug": "balancing-ambient-sounds",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/balancing-ambient-sounds.md",
+      "summary": "Ambient sounds have low priority but are essential for immersion. Present during quiet moments, never overpower key effects.",
+      "read_next": [
+        "making-effects-right-size"
+      ],
+      "source_videos": [
+        "jAgi6Uk1CU0"
+      ]
+    },
+    {
+      "title": "Making Effects the Right Size",
+      "slug": "making-effects-right-size",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/making-effects-right-size.md",
+      "summary": "Effects must be scaled correctly relative to characters. Common mistake: making flames too large, looking like candle flames.",
+      "read_next": [
+        "making-imaginary-feel-real"
+      ],
+      "source_videos": [
+        "rXwo0qcKJDk"
+      ]
+    },
+    {
+      "title": "Presenting Scores in Meaningful Ways",
+      "slug": "presenting-scores",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/presenting-scores.md",
+      "summary": "Raw scores less engaging. Attach to relatable concepts (brain age, total damage) transforms perception. Quick counting feedback enhances satisfaction.",
+      "read_next": [
+        "button-settings"
+      ],
+      "source_videos": [
+        "FeekeBW26AI"
+      ]
+    },
+    {
+      "title": "Giving Weight to Buttons",
+      "slug": "giving-weight-to-buttons",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/giving-weight-to-buttons.md",
+      "summary": "Button feel is determined by in-game action parameters (speed, frame rate). Design considering tactile feeling.",
+      "read_next": [
+        "assigning-animations"
+      ],
+      "source_videos": [
+        "9qzUwoKT9T8"
+      ]
+    },
+    {
+      "title": "Down with Lag",
+      "slug": "down-with-lag",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/down-with-lag.md",
+      "summary": "Reduce display delay to ensure game experience. Choose low-latency mode and reduce intermediate devices.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "gjoKKyskco4"
+      ]
+    },
+    {
+      "title": "Game Awards",
+      "slug": "game-awards",
+      "category_slug": "design-specifics",
+      "path": "categories/design-specifics/game-awards.md",
+      "summary": "Game awards should celebrate diversity, not ranking; encourage awards highlighting originality.",
+      "read_next": [
+        "screen-shake"
+      ],
+      "source_videos": [
+        "re5JlUcYvxU"
+      ]
+    },
+    {
+      "title": "Super Smash Bros.",
+      "slug": "super-smash-bros",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/super-smash-bros.md",
+      "summary": "Origin of Smash Bros: simplified controls, damage accumulation, using iconic characters to reduce entry barrier.",
+      "read_next": [
+        "fun-beyond-game-essence"
+      ],
+      "source_videos": [
+        "i3IOWaVDbx0"
+      ]
+    },
+    {
+      "title": "Super Smash Bros. Melee",
+      "slug": "super-smash-bros-melee",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/super-smash-bros-melee.md",
+      "summary": "Development concept: massively power-up original Smash (graphics, audio, content). Used GameCube disk for streaming music, CG cutscenes, figure collection.",
+      "read_next": [
+        "the-fiends-cauldron",
+        "writing-game-proposals"
+      ],
+      "source_videos": [
+        "vLRRNsAVl-8"
+      ]
+    },
+    {
+      "title": "Super Smash Bros. Brawl",
+      "slug": "super-smash-bros-brawl",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/super-smash-bros-brawl.md",
+      "summary": "Development insights: online play, single-player mode 'Subspace Emissary', new systems like Final Smash and Assist Trophies, slower pace for casuals, professional test players.",
+      "read_next": [
+        "make-retries-quick"
+      ],
+      "source_videos": [
+        "dXpFTHtlmCo"
+      ]
+    },
+    {
+      "title": "Super Smash Bros. for 3DS / Wii U",
+      "slug": "super-smash-bros-for-3ds-wii-u",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/super-smash-bros-for-3ds-wii-u.md",
+      "summary": "Dual-platform development with shared systems, unique features per console, technical achievements (60fps + 3D).",
+      "read_next": [
+        "super-smash-bros"
+      ],
+      "source_videos": [
+        "DeLrIXCOUw0"
+      ]
+    },
+    {
+      "title": "Kirby's Dream Land: Design Philosophy",
+      "slug": "kirbys-dream-land",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/kirbys-dream-land.md",
+      "summary": "First Kirby game deliberately lowered difficulty to guide new players: flight avoids fall deaths, inhaling enemies reduces risk, simple controls.",
+      "read_next": [
+        "stop-for-big-moments"
+      ],
+      "source_videos": [
+        "PBRt2D2YN44"
+      ]
+    },
+    {
+      "title": "Kirby Super Star: Co-op and Anthology",
+      "slug": "kirby-super-star",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/kirby-super-star.md",
+      "summary": "Two-player master/slave system and anthology structure enhance variety and replay value.",
+      "read_next": [
+        "kirbys-adventure"
+      ],
+      "source_videos": [
+        "PkeETXCSn5M"
+      ]
+    },
+    {
+      "title": "Kirby's Adventure: Introducing Copy Abilities",
+      "slug": "kirbys-adventure",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/kirbys-adventure.md",
+      "summary": "Copy abilities allow beginners to clear easily and experts to explore deeply, enriching character identity.",
+      "read_next": [
+        "kirby-super-star"
+      ],
+      "source_videos": [
+        "khJa2vIW0xY"
+      ]
+    },
+    {
+      "title": "Kirby Air Ride: Development Case Study",
+      "slug": "kirby-air-ride",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/kirby-air-ride.md",
+      "summary": "A case study on creating with limited time. Core mechanic: drift plus charge-and-release (risk/reward). Focus on variety (City Trial) rather than speedrunning. Vehicles differ only by parameters set by Sakurai.",
+      "read_next": [
+        "super-smash-bros"
+      ],
+      "source_videos": [
+        "bRDAYgRns4E"
+      ]
+    },
+    {
+      "title": "Meteos: Innovation in Puzzle Design",
+      "slug": "meteos-innovation",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/meteos-innovation.md",
+      "summary": "Core innovation flips traditional block-puzzle mechanics: launch blocks upward as propulsion. Each planet has unique shapes, physics, audio.",
+      "read_next": [
+        "falling-sells-flight"
+      ],
+      "source_videos": [
+        "snHecpmPeJs"
+      ]
+    },
+    {
+      "title": "Kid Icarus: Uprising - Innovative Design",
+      "slug": "kid-icarus-rising",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/kid-icarus-rising.md",
+      "summary": "A case study in hybrid genre (rail shooter + TPS) on 3DS, with touch-screen aiming, large enemies, full narratives in gameplay.",
+      "read_next": [
+        "hit-marks",
+        "high-difficulty-appeal"
+      ],
+      "source_videos": [
+        "p-uwRfckTs4"
+      ]
+    },
+    {
+      "title": "Game & Watch Design Preservation",
+      "slug": "game-and-watch-designs",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/game-and-watch-designs.md",
+      "summary": "Showcasing original LCD patterns from Game & Watch used as reference in Smash. Emphasizes preserving historical game assets.",
+      "read_next": [
+        "super-smash-bros"
+      ],
+      "source_videos": [
+        "8JLA5YG16QM"
+      ]
+    },
+    {
+      "title": "Guidelines",
+      "slug": "guidelines",
+      "category_slug": "game-concepts-case-studies",
+      "path": "categories/game-concepts-case-studies/guidelines.md",
+      "summary": "Guidelines unify but may restrict creativity. Always question their necessity.",
+      "read_next": [
+        "super-smash-bros"
+      ],
+      "source_videos": [
+        "HgvheCHsExA"
+      ]
+    }
+  ],
+  "source_videos": 299,
+  "guide_path": "GUIDE.md",
+  "entry_skill_path": "entry_skill/SKILL.md",
+  "index_path": "INDEX.md",
+  "glossary_path": "references/glossary.md",
+  "source_index_path": "references/source_index.md",
+  "status": "completed",
+  "category_count": 14,
+  "entry_count": 260,
+  "source_video_count": 299,
+  "last_run_at": "2026-05-21T10:39:53+00:00",
+  "error_message": null,
+  "output_dir": "handbook",
+  "manifest_path": "manifest.json"
+}

@@ -1,0 +1,47 @@
+[project]
+name = "patchouli-handbook"
+version = "0.1.0"
+description = "File-backed AI handbook knowledge systems with progressive disclosure, evidence, and CRUD tooling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["ai", "agents", "knowledge-base", "handbook", "skills"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+  "openai>=1.82,<2.0",
+  "pydantic>=2.8,<3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tritium0041/patchouli-handbook"
+Repository = "https://github.com/Tritium0041/patchouli-handbook"
+Issues = "https://github.com/Tritium0041/patchouli-handbook/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9.0",
+]
+
+[project.scripts]
+patchouli-handbook = "patchouli_handbook.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["patchouli_handbook*"]
