@@ -192,6 +192,7 @@ The builder writes `GUIDE.md`, `INDEX.md`, category pages, entry pages, referenc
 
 - [Architecture](docs/architecture.md): artifact layout and layer responsibilities.
 - [Agent Protocol](docs/agent-protocol.md): how an AI agent should progressively read a handbook.
+- [Minimal Integration Example](docs/integration-example.md): the smallest useful CLI loop for external agents and programs.
 - [Authoring Guide](docs/authoring-guide.md): how to add categories, entries, evidence, and links.
 - [Minimal Template](docs/template-handbook.md): planning worksheet for a new handbook.
 

@@ -192,6 +192,7 @@ builder 会写出 `GUIDE.md`、`INDEX.md`、分类页、条目页、references�
 
 - [Architecture](docs/architecture.md)：文件结构和各层职责。
 - [Agent Protocol](docs/agent-protocol.md)：Agent 应该如何渐进式读取 handbook。
+- [Minimal Integration Example](docs/integration-example.md)：外部 Agent 或程序接入 handbook 的最小 CLI 调用闭环。
 - [Authoring Guide](docs/authoring-guide.md)：如何添加分类、条目、证据和链接。
 - [Minimal Template](docs/template-handbook.md)：创建新 handbook 前的规划模板。
 
@@ -211,4 +212,3 @@ builder 会写出 `GUIDE.md`、`INDEX.md`、分类页、条目页、references�
 ```bash
 pytest
 ```
-
