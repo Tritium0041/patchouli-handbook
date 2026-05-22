@@ -1,32 +1,32 @@
 # Patchouli Handbook
 
-[中文说明](README_CN.md)
+[English README](README.md)
 
-Patchouli Handbook is a file-backed knowledge system for AI agents. It is inspired by skills, but it is intentionally thicker: a skill can trigger the right behavior, while a handbook can hold a full guide, routing map, reusable entries, glossary, source evidence, validation, and CRUD tooling.
+Patchouli Handbook 是一个面向 AI Agent 的文件型知识系统。它借鉴了 skill 的渐进式加载思路，但目标比 skill 更厚：skill 更像某个行为的触发器或 SOP，而 handbook 可以承载完整指导书、路由索引、可复用条目、术语表、来源证据、校验和 CRUD 工具。
 
-Use it when an agent needs more than a short SOP: domain principles, decision rules, examples, anti-patterns, and source-grounded guidance that should be expanded progressively instead of loaded all at once.
+当一个 Agent 需要的不只是短流程，而是领域原则、判断规则、案例、反模式和可追溯证据时，就适合使用 Patchouli Handbook。它的核心原则是：先读轻入口，再按需展开，而不是一次性把整本资料塞进上下文。
 
-## What It Provides
+## 能提供什么
 
-- A stable on-disk handbook format built from Markdown plus `manifest.json`.
-- A lightweight `entry_skill/SKILL.md` activation layer for skill-aware agents.
-- A thicker `GUIDE.md` operating manual for complex tasks.
-- Category and entry pages for progressive disclosure.
-- Optional evidence pages and source indexes for provenance.
-- A Python API and JSON CLI for creating, editing, validating, and inspecting handbooks.
-- A complete example handbook generated from public game-design source summaries.
+- 基于 Markdown 和 `manifest.json` 的稳定本地文件格式。
+- 轻量 `entry_skill/SKILL.md`，用于兼容 skill 风格的激活入口。
+- 更厚的 `GUIDE.md`，作为复杂任务的使用指导书。
+- 分类页和条目页，用于渐进式展开知识。
+- 可选的 evidence 页面和 source index，用于来源追溯。
+- Python API 和 JSON CLI，用于创建、编辑、校验、查看 handbook。
+- 一个完整示例 handbook，展示它在较大知识量下的组织方式。
 
-## Repository Layout
+## 仓库结构
 
 ```text
-patchouli_handbook/   Python library and CLI
-docs/                 Architecture, authoring, and agent protocol docs
-example/              Example generated handbooks
-tests/                Unit tests
-pyproject.toml        Package metadata and console script
+patchouli_handbook/   Python 库和 CLI
+docs/                 架构、写作规范和 Agent 使用协议
+example/              示例生成结果
+tests/                单元测试
+pyproject.toml        包元信息和命令入口
 ```
 
-## Handbook Layout
+## 单个 Handbook 的结构
 
 ```text
 <handbook_dir>/
@@ -46,7 +46,7 @@ pyproject.toml        Package metadata and console script
     └── <source_id>.md
 ```
 
-## Quick Start
+## 快速开始
 
 ```bash
 uv venv --python 3.12 .venv
@@ -54,9 +54,9 @@ source .venv/bin/activate
 uv pip install -e '.[dev]'
 ```
 
-Python 3.10+ is supported.
+支持 Python 3.10+。
 
-Create a blank handbook:
+创建一个空 handbook：
 
 ```bash
 patchouli-handbook init \
@@ -65,7 +65,7 @@ patchouli-handbook init \
   --audience "AI agents and studio maintainers"
 ```
 
-Add content:
+添加分类和条目：
 
 ```bash
 patchouli-handbook categories create \
@@ -79,21 +79,21 @@ patchouli-handbook entries create \
 patchouli-handbook validate --handbook output/studio-handbook
 ```
 
-Inspect the included example:
+查看内置示例：
 
 ```bash
 patchouli-handbook inspect --handbook example/masahiro-sakurai-on-creating-games
 patchouli-handbook validate --handbook example/masahiro-sakurai-on-creating-games
 ```
 
-Start reading the example at:
+示例建议从这两个文件开始读：
 
 - `example/masahiro-sakurai-on-creating-games/GUIDE.md`
 - `example/masahiro-sakurai-on-creating-games/INDEX.md`
 
 ## CLI
 
-Common commands:
+常用命令：
 
 ```bash
 patchouli-handbook structure
@@ -103,13 +103,13 @@ patchouli-handbook categories list --handbook <handbook_dir>
 patchouli-handbook entries get <entry_slug> --handbook <handbook_dir>
 ```
 
-Machine-readable integration point:
+给 Agent 或外部程序使用的单 JSON 操作入口：
 
 ```bash
 patchouli-handbook apply '{"action":"get_entry","slug":"scope-first"}' --handbook <handbook_dir>
 ```
 
-`apply` accepts these actions:
+`apply` 支持这些动作：
 
 - `describe`
 - `validate`
@@ -125,7 +125,7 @@ patchouli-handbook apply '{"action":"get_entry","slug":"scope-first"}' --handboo
 - `update_entry`
 - `delete_entry`
 
-CLI failures are emitted as JSON:
+CLI 失败也会输出 JSON，方便外部系统解析：
 
 ```json
 {
@@ -169,15 +169,15 @@ store.create_entry(
 print(store.validate().model_dump())
 ```
 
-## Build From Source Summaries
+## 从来源摘要构建
 
-The builder can generate a handbook from a `channel_extractor`-style job directory containing:
+builder 可以从一类整理好的 source-summary job 目录生成 handbook。输入目录需要包含：
 
 - `channel.json`
 - `videos.json`
 - `clean/<video_id>.json`
 
-Example:
+示例：
 
 ```bash
 export OPENAI_API_KEY=...
@@ -186,28 +186,29 @@ patchouli-handbook build \
   --output output/generated-handbook
 ```
 
-The builder writes `GUIDE.md`, `INDEX.md`, category pages, entry pages, references, evidence pages, `entry_skill/SKILL.md`, and `manifest.json`.
+builder 会写出 `GUIDE.md`、`INDEX.md`、分类页、条目页、references、evidence、`entry_skill/SKILL.md` 和 `manifest.json`。
 
-## Documentation
+## 文档
 
-- [Architecture](docs/architecture.md): artifact layout and layer responsibilities.
-- [Agent Protocol](docs/agent-protocol.md): how an AI agent should progressively read a handbook.
-- [Authoring Guide](docs/authoring-guide.md): how to add categories, entries, evidence, and links.
-- [Minimal Template](docs/template-handbook.md): planning worksheet for a new handbook.
+- [Architecture](docs/architecture.md)：文件结构和各层职责。
+- [Agent Protocol](docs/agent-protocol.md)：Agent 应该如何渐进式读取 handbook。
+- [Authoring Guide](docs/authoring-guide.md)：如何添加分类、条目、证据和链接。
+- [Minimal Template](docs/template-handbook.md)：创建新 handbook 前的规划模板。
 
-## Included Example
+## 内置示例
 
-`example/masahiro-sakurai-on-creating-games` demonstrates a generated handbook with:
+`example/masahiro-sakurai-on-creating-games` 是一个完整生成示例，包含：
 
-- 14 categories
-- 260 entries
-- 299 evidence pages
-- `GUIDE.md` plus a skill-compatible `entry_skill/SKILL.md`
+- 14 个 categories
+- 260 个 entries
+- 299 个 evidence pages
+- `GUIDE.md` 和兼容 skill 的 `entry_skill/SKILL.md`
 
-The example is included to show the intended scale and navigation pattern of a thick handbook.
+这个示例用于展示厚 handbook 在较大知识量下的导航方式和文件组织方式。
 
-## Test
+## 测试
 
 ```bash
 pytest
 ```
+
